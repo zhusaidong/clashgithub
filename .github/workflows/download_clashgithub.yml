@@ -3,6 +3,8 @@ name: download clashgithub
 on:
   push:
     branches: [ main ]
+  schedule:
+    - cron: '0 1 * * *'
 
 jobs:
   generate-file:
