@@ -1,4 +1,4 @@
-name: download clashgithub
+name: Daily Auto Download clashgithub
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
     - cron: '0 1 * * *'
 
 jobs:
-  generate-file:
+  download-clashgithub:
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -16,7 +16,7 @@ jobs:
     - name: Checkout Code
       uses: actions/checkout@main
 
-    - name: Generate clashgithub.yml
+    - name: download clashgithub.yml
       run: |
         wget "https://clashgithub.com/wp-content/uploads/rss/$(date +'%Y%m%d').yml" -O clashgithub.yml
         sed -i 's/&quot;/"/g' clashgithub.yml
