@@ -25,9 +25,10 @@ jobs:
         git config --global user.email "actions@github.com"
         git config --global user.name "GitHub Actions"
         git commit -m "Add clashgithub.yml"
-
+        git push 
+        
     - name: Push clashgithub.yml
-      uses: zhusaidong/clashgithub@main
+      uses: stefanzweifel/git-auto-commit-action@v4
       with:
         branch: main
         github_token: ${{ secrets.GITHUB_TOKEN }}
