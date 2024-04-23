@@ -19,6 +19,7 @@ jobs:
 
     - name: download clashgithub.yml
       run: |
+        echo "current=$(date +'%Y%m%d')"
         wget "https://clashgithub.com/wp-content/uploads/rss/$(date +'%Y%m%d').yml" -O clashgithub.yml
         sed -i 's/&quot;/"/g' clashgithub.yml
 
