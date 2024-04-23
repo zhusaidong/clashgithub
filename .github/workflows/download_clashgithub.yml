@@ -4,8 +4,8 @@ on:
   #push:
   #  branches: [ main ]
   schedule:
-    # utc的0:00等于北京时间8:00
-    - cron: '0 0 * * *'
+    # utc的1:00等于北京时间9:00
+    - cron: '0 1 * * *'
 
 jobs:
   download-clashgithub:
