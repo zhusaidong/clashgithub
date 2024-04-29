@@ -2,11 +2,11 @@ name: Daily Auto Download clashgithub
 
 on:
   workflow_dispatch:
-  push:
-    branches: [ main ]
+  #push:
+  #  branches: [ main ]
   schedule:
-    # utc的1:13等于北京时间9:13
-    - cron: '13 1 * * *'
+    # utc的23:23等于北京时间7:23，但github的定时会有延时。故提前2小时。
+    - cron: '23 23 * * *'
 
 jobs:
   download-clashgithub:
