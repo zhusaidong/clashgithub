@@ -5,8 +5,8 @@ on:
   #push:
   #  branches: [ main ]
   schedule:
-    # utc的23:23等于北京时间7:23，但github的定时会有延时。故提前2小时。
-    - cron: '23 23 * * *'
+    # utc的0:23等于北京时间8:23
+    - cron: '23 0 * * *'
 
 jobs:
   download-clashgithub:
