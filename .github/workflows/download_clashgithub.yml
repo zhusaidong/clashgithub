@@ -5,8 +5,8 @@ on:
   #push:
   #  branches: [ main ]
   schedule:
-    # utc的0:23等于北京时间8:23
-    - cron: '23 0 * * *'
+    # utc的0:01等于北京时间8:01
+    - cron: '1 0 * * *'
 
 jobs:
   download-clashgithub:
@@ -20,7 +20,7 @@ jobs:
 
     - name: download clashgithub.yml
       run: |
-        echo "current=$(date +'%Y%m%d')"
+        echo "current time=$(date +'%Y%m%d-%H%M%S')"
         wget "https://clashgithub.com/wp-content/uploads/rss/$(date +'%Y%m%d').yml" -O clashgithub.yml
         sed -i 's/&quot;/"/g' clashgithub.yml
 
