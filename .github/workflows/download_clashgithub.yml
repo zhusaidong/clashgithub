@@ -4,9 +4,9 @@ on:
   workflow_dispatch:
   #push:
   #  branches: [ main ]
-  #schedule:
+  schedule:
     # utc的0:01等于北京时间8:01
-    #- cron: '1 0 * * *'
+    - cron: '1 0 * * *'
 
 jobs:
   download-clashgithub:
@@ -20,8 +20,8 @@ jobs:
 
     - name: download clashgithub.yml
       run: |
-        echo "current time=$(date +'%Y%m%d-%H%M%S')"
-        wget "https://clashgithub.com/wp-content/uploads/rss/$(date +'%Y%m%d').yml" -O clashgithub.yml
+        echo "current time=$(date +'%Y%m%d %H:%M:%S')"
+        wget --tries=2 --wait=10 --timeout=15 "https://clashgithub.com/wp-content/uploads/rss/$(date +'%Y%m%d').yml" -O clashgithub.yml
         sed -i 's/&quot;/"/g' clashgithub.yml
 
     - name: Add clashgithub.yml
