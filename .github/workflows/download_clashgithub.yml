@@ -21,6 +21,7 @@ jobs:
     - name: download clashgithub.yml
       run: |
         echo "current time=$(date +'%Y%m%d %H:%M:%S')"
+        # 截止到20240519，后面废了
         wget --tries=2 --wait=10 --timeout=15 "https://clashgithub.com/wp-content/uploads/rss/$(date +'%Y%m%d').yml" -O clashgithub.yml
         sed -i 's/&quot;/"/g' clashgithub.yml
 
