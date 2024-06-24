@@ -5,7 +5,7 @@ on:
   #push:
   #  branches: [ main ]
   schedule:
-     utc的0:01等于北京时间8:01
+    #utc的0:01等于北京时间8:01
     - cron: '1 0 * * *'
 
 jobs:
