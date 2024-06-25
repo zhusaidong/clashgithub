@@ -6,7 +6,7 @@ on:
   #  branches: [ main ]
   schedule:
     #utc的0:01等于北京时间8:01
-    - cron: '1 0 * * *'
+    - cron: '4 0 * * *'
 
 jobs:
   download-clashgithub:
