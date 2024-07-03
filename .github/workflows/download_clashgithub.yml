@@ -21,12 +21,18 @@ jobs:
     - name: download clashgithub.yml
       run: |
         echo "current time=$(date +'%Y%m%d %H:%M:%S')"
-        wget --tries=2 --wait=10 --timeout=15 "https://clashnode.github.io/uploads/$(date +'%Y')/$(date +'%m')/4-$(date -d "yesterday" +'%Y%m%d').yml" -O clashgithub.yml
-        sed -i 's/&quot;/"/g' clashgithub.yml
-
-    - name: Add clashgithub.yml
-      run: git add clashgithub.yml
-
+        # wget --tries=2 --wait=10 --timeout=15 "https://clashnode.github.io/uploads/$(date +'%Y')/$(date +'%m')/4-$(date -d "yesterday" +'%Y%m%d').yml" -O clashgithub.yml
+        # sed -i 's/&quot;/"/g' clashgithub.yml
+        
+        wget --tries=2 --wait=10 --timeout=15 "https://clashnode.github.io/uploads/$(date +'%Y')/$(date +'%m')/1-$(date -d "yesterday" +'%Y%m%d').yaml" -O clash-clashnode.github.io-1.yml
+        wget --tries=2 --wait=10 --timeout=15 "https://clashnode.github.io/uploads/$(date +'%Y')/$(date +'%m')/2-$(date -d "yesterday" +'%Y%m%d').yaml" -O clash-clashnode.github.io-2.yml
+        wget --tries=2 --wait=10 --timeout=15 "https://clashnode.github.io/uploads/$(date +'%Y')/$(date +'%m')/3-$(date -d "yesterday" +'%Y%m%d').yaml" -O clash-clashnode.github.io-3.yml
+        wget --tries=2 --wait=10 --timeout=15 "https://clashnode.github.io/uploads/$(date +'%Y')/$(date +'%m')/4-$(date -d "yesterday" +'%Y%m%d').yml"  -O clash-clashnode.github.io-4.yml
+        
+        wget --tries=2 --wait=10 --timeout=15 "https://raw.githubusercontent.com/aiboboxx/clashfree/main/clash.yml"  -O clash-aiboboxx.clashfree.yml
+        
+    #- name: Add clashgithub.yml
+    #  run: git add clashgithub.yml
     - name: Commit clashgithub.yml
       run: |
         git config --global user.email "actions@github.com"
