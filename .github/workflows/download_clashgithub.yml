@@ -24,12 +24,12 @@ jobs:
         # wget --tries=2 --wait=10 --timeout=15 "https://clashnode.github.io/uploads/$(date +'%Y')/$(date +'%m')/4-$(date -d "yesterday" +'%Y%m%d').yml" -O clashgithub.yml
         # sed -i 's/&quot;/"/g' clashgithub.yml
         
-        wget --continue --tries=2 --wait=10 --timeout=15 "https://clashnode.github.io/uploads/$(date +'%Y')/$(date +'%m')/1-$(date -d "yesterday" +'%Y%m%d').yaml" -O clash-clashnode.github.io-1.yml
-        wget --continue --tries=2 --wait=10 --timeout=15 "https://clashnode.github.io/uploads/$(date +'%Y')/$(date +'%m')/2-$(date -d "yesterday" +'%Y%m%d').yaml" -O clash-clashnode.github.io-2.yml
-        wget --continue --tries=2 --wait=10 --timeout=15 "https://clashnode.github.io/uploads/$(date +'%Y')/$(date +'%m')/3-$(date -d "yesterday" +'%Y%m%d').yaml" -O clash-clashnode.github.io-3.yml
-        wget --continue --tries=2 --wait=10 --timeout=15 "https://clashnode.github.io/uploads/$(date +'%Y')/$(date +'%m')/4-$(date -d "yesterday" +'%Y%m%d').yml"  -O clash-clashnode.github.io-4.yml
+        wget --tries=2 --wait=10 --timeout=15 "https://clashnode.github.io/uploads/$(date +'%Y')/$(date +'%m')/1-$(date -d "yesterday" +'%Y%m%d').yaml" -O clash-clashnode.github.io-1.yml
+        wget --tries=2 --wait=10 --timeout=15 "https://clashnode.github.io/uploads/$(date +'%Y')/$(date +'%m')/2-$(date -d "yesterday" +'%Y%m%d').yaml" -O clash-clashnode.github.io-2.yml
+        wget --tries=2 --wait=10 --timeout=15 "https://clashnode.github.io/uploads/$(date +'%Y')/$(date +'%m')/3-$(date -d "yesterday" +'%Y%m%d').yaml" -O clash-clashnode.github.io-3.yml
+        wget --tries=2 --wait=10 --timeout=15 "https://clashnode.github.io/uploads/$(date +'%Y')/$(date +'%m')/4-$(date -d "yesterday" +'%Y%m%d').yml"  -O clash-clashnode.github.io-4.yml || true
         
-        wget --continue --tries=2 --wait=10 --timeout=15 "https://raw.githubusercontent.com/aiboboxx/clashfree/main/clash.yml"  -O clash-aiboboxx.clashfree.yml
+        wget --tries=2 --wait=10 --timeout=15 "https://raw.githubusercontent.com/aiboboxx/clashfree/main/clash.yml"  -O clash-aiboboxx.clashfree.yml
         
     #- name: Add clashgithub.yml
     #  run: git add clashgithub.yml
