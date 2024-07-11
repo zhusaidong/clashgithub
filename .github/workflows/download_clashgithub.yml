@@ -4,9 +4,9 @@ on:
   workflow_dispatch:
   #push:
   #  branches: [ main ]
-  schedule:
-    #utc的0:01等于北京时间8:01
-    - cron: '0 1 * * *'
+  #schedule:
+  #  utc的0:01等于北京时间8:01
+  #  - cron: '0 1 * * *'
 
 jobs:
   download-clashgithub:
