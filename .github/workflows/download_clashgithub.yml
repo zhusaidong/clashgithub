@@ -4,9 +4,9 @@ on:
   workflow_dispatch:
   #push:
   #  branches: [ main ]
-  #schedule:
+  schedule:
   #  utc的0:01等于北京时间8:01
-  #  - cron: '0 1 * * *'
+    - cron: '0 1 * * *'
 
 jobs:
   download-clashgithub:
@@ -23,13 +23,13 @@ jobs:
         echo "current time=$(date +'%Y%m%d %H:%M:%S')"
         # sed -i 's/&quot;/"/g' clashgithub.yml
         
-        wget --tries=2 --wait=10 --timeout=15 "https://clashnode.github.io/uploads/$(date +'%Y')/$(date +'%m')/1-$(date -d "yesterday" +'%Y%m%d').yaml" -O clash-clashnode.github.io-1.yml || true
-        wget --tries=2 --wait=10 --timeout=15 "https://clashnode.github.io/uploads/$(date +'%Y')/$(date +'%m')/2-$(date -d "yesterday" +'%Y%m%d').yaml" -O clash-clashnode.github.io-2.yml || true
+        #wget --tries=2 --wait=10 --timeout=15 "https://clashnode.github.io/uploads/$(date +'%Y')/$(date +'%m')/1-$(date -d "yesterday" +'%Y%m%d').yaml" -O clash-clashnode.github.io-1.yml || true
+        #wget --tries=2 --wait=10 --timeout=15 "https://clashnode.github.io/uploads/$(date +'%Y')/$(date +'%m')/2-$(date -d "yesterday" +'%Y%m%d').yaml" -O clash-clashnode.github.io-2.yml || true
         sed -i 's/6元高速机场:cczzuu.top/高性价比机场:https:\/\/kfyun.uk/g' clash-clashnode.github.io-2.yml
         sed -i 's/高性价比机场:cczzuu.top/高性价比机场:https:\/\/kfyun.uk/g' clash-clashnode.github.io-2.yml
         
         
-        wget --tries=2 --wait=10 --timeout=15 "https://clashnode.github.io/uploads/$(date +'%Y')/$(date +'%m')/3-$(date -d "yesterday" +'%Y%m%d').yaml" -O clash-clashnode.github.io-3.yml || true
+        #wget --tries=2 --wait=10 --timeout=15 "https://clashnode.github.io/uploads/$(date +'%Y')/$(date +'%m')/3-$(date -d "yesterday" +'%Y%m%d').yaml" -O clash-clashnode.github.io-3.yml || true
         #wget --tries=2 --wait=10 --timeout=15 "https://clashnode.github.io/uploads/$(date +'%Y')/$(date +'%m')/4-$(date -d "yesterday" +'%Y%m%d').yml"  -O clash-clashnode.github.io-4.yml || true
         
         wget --tries=2 --wait=10 --timeout=15 "https://raw.githubusercontent.com/aiboboxx/clashfree/main/clash.yml"  -O clash-aiboboxx.clashfree.yml || true
