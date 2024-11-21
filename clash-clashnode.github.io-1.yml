@@ -5,66 +5,56 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: DE德国(mibei77.com 米贝节点分享), server: 45.87.175.199, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: cvII85TrW6n0OGyfpHVS1u, udp: true}
-  - {name: US美国(mibei77.com 米贝节点分享), server: fbi.gov, port: 2095, type: vmess, uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /github.com/Alvin9999, ws-headers: {Host: ip20.6016725.xyz}, udp: true}
-  - {name: US美国(mibei77.com 米贝节点分享) 2, server: malaysia.com, port: 2095, type: vmess, uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: github.com/Alvin9999, ws-headers: {Host: ip2.6016725.xyz}, udp: true}
-  - {name: DE德国(mibei77.com 米贝节点分享) 2, server: 45.87.175.164, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: cvII85TrW6n0OGyfpHVS1u, udp: true}
-  - {name: DE德国(mibei77.com 米贝节点分享) 3, server: 45.87.175.192, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: cvII85TrW6n0OGyfpHVS1u, udp: true}
-  - {name: 俄罗斯(mibei77.com 米贝节点分享), server: 46.17.40.57, port: 12345, type: ss, cipher: aes-256-gcm, password: dongtaiwang.com, udp: true}
-  - {name: US美国(mibei77.com 米贝节点分享) 3, server: 203.23.128.33, port: 990, type: ss, cipher: chacha20-ietf-poly1305, password: f8f7aCzcPKbsF8p3, udp: true}
-  - {name: US美国(mibei77.com 米贝节点分享) 4, server: 183.236.48.163, port: 40002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US美国(mibei77.com 米贝节点分享) 5, server: 120.232.153.27, port: 58002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US美国(mibei77.com 米贝节点分享) 6, server: 183.236.51.23, port: 56601, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: DE德国(mibei77.com 米贝节点分享) 4, server: 45.87.175.166, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: 1RWwXhwfAB5gAEozU4G2Pg, udp: true}
-  - {name: US美国(mibei77.com 米贝节点分享) 7, server: 183.236.51.23, port: 52112, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 卢森堡(mibei77.com 米贝节点分享), server: russia.com, port: 2082, type: vmess, uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /github.com/Alvin9999, ws-headers: {Host: ip18.6929198.xyz}, udp: true}
-  - {name: US美国(mibei77.com 米贝节点分享) 8, server: japan.com, port: 2082, type: vmess, uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: github.com/Alvin9999, ws-headers: {Host: ip3.6929198.xyz}, udp: true}
-  - {name: US美国(mibei77.com 米贝节点分享) 9, server: malaysia.com, port: 2082, type: vmess, uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: github.com/Alvin9999, ws-headers: {Host: ip3.6929198.xyz}, udp: true}
-  - {name: US美国(mibei77.com 米贝节点分享) 10, server: ip.sb, port: 2095, type: vmess, uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: github.com/Alvin9999, ws-headers: {Host: ip2.6016725.xyz}, udp: true}
-  - {name: US美国(mibei77.com 米贝节点分享) 11, server: russia.com, port: 2082, type: vmess, uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: github.com/Alvin9999, ws-headers: {Host: ip3.6929198.xyz}, udp: true}
-  - {name: US美国(mibei77.com 米贝节点分享) 12, server: ip.sb, port: 2095, type: vmess, uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: github.com/Alvin9999, ws-headers: {Host: ip8.6016725.xyz}, udp: true}
-  - {name: US美国(mibei77.com 米贝节点分享) 13, server: russia.com, port: 2095, type: vmess, uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /github.com/Alvin9999, ws-headers: {Host: ip11.6016725.xyz}, udp: true}
-  - {name: US美国(mibei77.com 米贝节点分享) 14, server: russia.com, port: 2095, type: vmess, uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: github.com/Alvin9999, ws-headers: {Host: ip2.6016725.xyz}, udp: true}
-  - {name: US美国(mibei77.com 米贝节点分享) 15, server: ip.sb, port: 2095, type: vmess, uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: github.com/Alvin9999, ws-headers: {Host: ip8.6016725.xyz}, udp: true}
-  - {name: US美国(mibei77.com 米贝节点分享) 16, server: singapore.com, port: 2095, type: vmess, uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: github.com/Alvin9999, ws-headers: {Host: ip2.6016725.xyz}, udp: true}
-  - {name: DE德国(mibei77.com 米贝节点分享) 5, server: 38.86.135.141, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: US美国(mibei77.com 米贝节点分享) 17, server: singapore.com, port: 2095, type: vmess, uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: github.com/Alvin9999, ws-headers: {Host: ip2.6016725.xyz}, udp: true}
+  - {name: FR法国(mibei77.com 米贝节点分享), server: 45.87.175.199, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: cvII85TrW6n0OGyfpHVS1u, udp: true}
+  - {name: US美国(mibei77.com 米贝节点分享), server: icook.tw, port: 2095, type: vmess, uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: github.com/Alvin9999, ws-headers: {Host: ip2.6016725.xyz}, udp: true}
+  - {name: HK香港(mibei77.com 米贝节点分享), server: yd2.ainivp.com, port: 33202, type: vmess, uuid: 9204afcd-023e-781f-1abc-c12efccd1344, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: yd2.ainivp.com}, udp: true}
+  - {name: US美国(mibei77.com 米贝节点分享) 2, server: icook.tw, port: 2082, type: vmess, uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: github.com/Alvin9999, ws-headers: {Host: ip3.6929198.xyz}, udp: true}
+  - {name: DE德国(mibei77.com 米贝节点分享), server: 45.87.175.192, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: cvII85TrW6n0OGyfpHVS1u, udp: true}
+  - {name: US美国(mibei77.com 米贝节点分享) 3, server: ip.sb, port: 2082, type: vmess, uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: github.com/Alvin9999, ws-headers: {Host: ip3.6929198.xyz}, udp: true}
+  - {name: US美国(mibei77.com 米贝节点分享) 4, server: ip.sb, port: 2095, type: vmess, uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: github.com/Alvin9999, ws-headers: {Host: ip8.6016725.xyz}, udp: true}
+  - {name: JP日本(mibei77.com 米贝节点分享), server: 54.249.161.173, port: 443, type: trojan, password: 8zlR8O7E3S8uqex4xYnpp8O6C3lZejBCZO53eYD7XIAaaTBRC3Cj9SCFxlAwKAwD2yyN3, skip-cert-verify: true, udp: true}
+  - {name: HK香港(mibei77.com 米贝节点分享) 2, server: 183.236.51.23, port: 53002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US美国(mibei77.com 米贝节点分享) 5, server: malaysia.com, port: 2095, type: vmess, uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: github.com/Alvin9999, ws-headers: {Host: ip2.6016725.xyz}, udp: true}
+  - {name: DE德国(mibei77.com 米贝节点分享) 2, server: 38.86.135.141, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
   - {name: CA加拿大(mibei77.com 米贝节点分享), server: ip.sb, port: 2095, type: vmess, uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /github.com/Alvin9999, ws-headers: {Host: ip20.6016725.xyz}, udp: true}
-  - {name: US美国(mibei77.com 米贝节点分享) 18, server: singapore.com, port: 2082, type: vmess, uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: github.com/Alvin9999, ws-headers: {Host: ip12.6929198.xyz}, udp: true}
-  - {name: 俄罗斯(mibei77.com 米贝节点分享) 2, server: 89.185.84.185, port: 12575, type: ss, cipher: chacha20-ietf-poly1305, password: pUJMrUkY8fpVI2b18T5sRi, udp: true}
-  - {name: DE德国(mibei77.com 米贝节点分享) 6, server: 45.87.175.166, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: cvII85TrW6n0OGyfpHVS1u, udp: true}
-  - {name: US美国(mibei77.com 米贝节点分享) 19, server: fbi.gov, port: 2082, type: vmess, uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: github.com/Alvin9999, ws-headers: {Host: ip3.6929198.xyz}, udp: true}
-  - {name: US美国(mibei77.com 米贝节点分享) 20, server: speed.cloudflare.com, port: 80, type: vmess, uuid: 76221bfb-e92f-4e80-81c5-6fe48f50ac0b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /glweidf.sbs/linkws, ws-headers: {Host: 7ehhjdelicate-unit-e634.bowik41429.workers.dev}, udp: true}
-  - {name: US美国(mibei77.com 米贝节点分享) 21, server: 183.236.51.23, port: 51704, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US美国(mibei77.com 米贝节点分享) 22, server: 183.236.51.23, port: 46602, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US美国(mibei77.com 米贝节点分享) 23, server: icook.tw, port: 2082, type: vmess, uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: github.com/Alvin9999, ws-headers: {Host: ip3.6929198.xyz}, udp: true}
-  - {name: DE德国(mibei77.com 米贝节点分享) 7, server: 45.87.175.164, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: 1RWwXhwfAB5gAEozU4G2Pg, udp: true}
-  - {name: US美国(mibei77.com 米贝节点分享) 24, server: 208.67.105.196, port: 42029, type: ss, cipher: chacha20-ietf-poly1305, password: SjdGCHwafjktt1rzpGxTKYTvVBWb8Xa6E5DTr6MzbdHQSwvpLiDczj3n6MBjy2uyFSzgqgvCWsDQmpM4VQzfPzyGYF58wdyD, udp: true}
-  - {name: US美国(mibei77.com 米贝节点分享) 25, server: fbi.gov, port: 2082, type: vmess, uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /github.com/Alvin9999, ws-headers: {Host: ip18.6929198.xyz}, udp: true}
-  - {name: DE德国(mibei77.com 米贝节点分享) 8, server: 45.87.175.192, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: 4a2rfixophdjffa8KVA4Aa, udp: true}
-  - {name: DE德国(mibei77.com 米贝节点分享) 9, server: 45.87.175.199, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: 1RWwXhwfAB5gAEozU4G2Pg, udp: true}
-  - {name: DE德国(mibei77.com 米贝节点分享) 10, server: 45.87.175.192, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: 1RWwXhwfAB5gAEozU4G2Pg, udp: true}
-  - {name: DE德国(mibei77.com 米贝节点分享) 11, server: 45.87.175.188, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: 1RWwXhwfAB5gAEozU4G2Pg, udp: true}
-  - {name: 俄罗斯(mibei77.com 米贝节点分享) 3, server: 89.185.84.185, port: 12575, type: ss, cipher: chacha20-ietf-poly1305, password: gdt6FA0fOR3pBQdFcyHyfv, udp: true}
+  - {name: US美国(mibei77.com 米贝节点分享) 6, server: ip.sb, port: 2082, type: vmess, uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /github.com/Alvin9999, ws-headers: {Host: ip16.6929198.xyz}, udp: true}
+  - {name: US美国(mibei77.com 米贝节点分享) 7, server: ip.sb, port: 2095, type: vmess, uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: github.com/Alvin9999, ws-headers: {Host: ip8.6016725.xyz}, udp: true}
+  - {name: DE德国(mibei77.com 米贝节点分享) 3, server: 45.87.175.199, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: 1RWwXhwfAB5gAEozU4G2Pg, udp: true}
+  - {name: US美国(mibei77.com 米贝节点分享) 8, server: icook.tw, port: 2095, type: vmess, uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /github.com/Alvin9999, ws-headers: {Host: ip15.6016725.xyz}, udp: true}
+  - {name: US美国(mibei77.com 米贝节点分享) 9, server: 208.67.105.196, port: 42029, type: ss, cipher: chacha20-ietf-poly1305, password: SjdGCHwafjktt1rzpGxTKYTvVBWb8Xa6E5DTr6MzbdHQSwvpLiDczj3n6MBjy2uyFSzgqgvCWsDQmpM4VQzfPzyGYF58wdyD, udp: true}
+  - {name: US美国(mibei77.com 米贝节点分享) 10, server: singapore.com, port: 2095, type: vmess, uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: github.com/Alvin9999, ws-headers: {Host: ip2.6016725.xyz}, udp: true}
+  - {name: US美国(mibei77.com 米贝节点分享) 11, server: 183.236.51.23, port: 56601, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US美国(mibei77.com 米贝节点分享) 12, server: russia.com, port: 2095, type: vmess, uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: github.com/Alvin9999, ws-headers: {Host: ip2.6016725.xyz}, udp: true}
+  - {name: US美国(mibei77.com 米贝节点分享) 13, server: singapore.com, port: 2095, type: vmess, uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /github.com/Alvin9999, ws-headers: {Host: ip20.6016725.xyz}, udp: true}
+  - {name: US美国(mibei77.com 米贝节点分享) 14, server: fbi.gov, port: 2095, type: vmess, uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /github.com/Alvin9999, ws-headers: {Host: ip20.6016725.xyz}, udp: true}
+  - {name: US美国(mibei77.com 米贝节点分享) 15, server: fbi.gov, port: 2082, type: vmess, uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /github.com/Alvin9999, ws-headers: {Host: ip18.6929198.xyz}, udp: true}
+  - {name: NL荷兰(mibei77.com 米贝节点分享), server: 65.75.192.48, port: 37543, type: vmess, uuid: 4674cbfc-f9ab-4c47-eec1-ba0a98ae370e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /67jfsf, ws-headers: {Host: 65.75.192.48}, udp: true}
+  - {name: US美国(mibei77.com 米贝节点分享) 16, server: fbi.gov, port: 2082, type: vmess, uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: github.com/Alvin9999, ws-headers: {Host: ip3.6929198.xyz}, udp: true}
+  - {name: FR法国(mibei77.com 米贝节点分享) 2, server: 2.182.174.21, port: 9090, type: vmess, uuid: fddf88ed-8c70-42ad-c12e-5f40841e6f00, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 俄罗斯(mibei77.com 米贝节点分享), server: 194.87.82.28, port: 12224, type: ss, cipher: chacha20-ietf-poly1305, password: 2fwufOmJ9ELfN4umzcHBfV, udp: true}
+  - {name: US美国(mibei77.com 米贝节点分享) 17, server: singapore.com, port: 2082, type: vmess, uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: github.com/Alvin9999, ws-headers: {Host: ip12.6929198.xyz}, udp: true}
+  - {name: DE德国(mibei77.com 米贝节点分享) 4, server: 45.87.175.192, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: 4a2rfixophdjffa8KVA4Aa, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - DE德国(mibei77.com 米贝节点分享)
+      - FR法国(mibei77.com 米贝节点分享)
       - US美国(mibei77.com 米贝节点分享)
+      - HK香港(mibei77.com 米贝节点分享)
       - US美国(mibei77.com 米贝节点分享) 2
-      - DE德国(mibei77.com 米贝节点分享) 2
-      - DE德国(mibei77.com 米贝节点分享) 3
-      - 俄罗斯(mibei77.com 米贝节点分享)
+      - DE德国(mibei77.com 米贝节点分享)
       - US美国(mibei77.com 米贝节点分享) 3
       - US美国(mibei77.com 米贝节点分享) 4
+      - JP日本(mibei77.com 米贝节点分享)
+      - HK香港(mibei77.com 米贝节点分享) 2
       - US美国(mibei77.com 米贝节点分享) 5
+      - DE德国(mibei77.com 米贝节点分享) 2
+      - CA加拿大(mibei77.com 米贝节点分享)
       - US美国(mibei77.com 米贝节点分享) 6
-      - DE德国(mibei77.com 米贝节点分享) 4
       - US美国(mibei77.com 米贝节点分享) 7
-      - 卢森堡(mibei77.com 米贝节点分享)
+      - DE德国(mibei77.com 米贝节点分享) 3
       - US美国(mibei77.com 米贝节点分享) 8
       - US美国(mibei77.com 米贝节点分享) 9
       - US美国(mibei77.com 米贝节点分享) 10
@@ -73,44 +63,32 @@ proxy-groups:
       - US美国(mibei77.com 米贝节点分享) 13
       - US美国(mibei77.com 米贝节点分享) 14
       - US美国(mibei77.com 米贝节点分享) 15
+      - NL荷兰(mibei77.com 米贝节点分享)
       - US美国(mibei77.com 米贝节点分享) 16
-      - DE德国(mibei77.com 米贝节点分享) 5
+      - FR法国(mibei77.com 米贝节点分享) 2
+      - 俄罗斯(mibei77.com 米贝节点分享)
       - US美国(mibei77.com 米贝节点分享) 17
-      - CA加拿大(mibei77.com 米贝节点分享)
-      - US美国(mibei77.com 米贝节点分享) 18
-      - 俄罗斯(mibei77.com 米贝节点分享) 2
-      - DE德国(mibei77.com 米贝节点分享) 6
-      - US美国(mibei77.com 米贝节点分享) 19
-      - US美国(mibei77.com 米贝节点分享) 20
-      - US美国(mibei77.com 米贝节点分享) 21
-      - US美国(mibei77.com 米贝节点分享) 22
-      - US美国(mibei77.com 米贝节点分享) 23
-      - DE德国(mibei77.com 米贝节点分享) 7
-      - US美国(mibei77.com 米贝节点分享) 24
-      - US美国(mibei77.com 米贝节点分享) 25
-      - DE德国(mibei77.com 米贝节点分享) 8
-      - DE德国(mibei77.com 米贝节点分享) 9
-      - DE德国(mibei77.com 米贝节点分享) 10
-      - DE德国(mibei77.com 米贝节点分享) 11
-      - 俄罗斯(mibei77.com 米贝节点分享) 3
+      - DE德国(mibei77.com 米贝节点分享) 4
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - DE德国(mibei77.com 米贝节点分享)
+      - FR法国(mibei77.com 米贝节点分享)
       - US美国(mibei77.com 米贝节点分享)
+      - HK香港(mibei77.com 米贝节点分享)
       - US美国(mibei77.com 米贝节点分享) 2
-      - DE德国(mibei77.com 米贝节点分享) 2
-      - DE德国(mibei77.com 米贝节点分享) 3
-      - 俄罗斯(mibei77.com 米贝节点分享)
+      - DE德国(mibei77.com 米贝节点分享)
       - US美国(mibei77.com 米贝节点分享) 3
       - US美国(mibei77.com 米贝节点分享) 4
+      - JP日本(mibei77.com 米贝节点分享)
+      - HK香港(mibei77.com 米贝节点分享) 2
       - US美国(mibei77.com 米贝节点分享) 5
+      - DE德国(mibei77.com 米贝节点分享) 2
+      - CA加拿大(mibei77.com 米贝节点分享)
       - US美国(mibei77.com 米贝节点分享) 6
-      - DE德国(mibei77.com 米贝节点分享) 4
       - US美国(mibei77.com 米贝节点分享) 7
-      - 卢森堡(mibei77.com 米贝节点分享)
+      - DE德国(mibei77.com 米贝节点分享) 3
       - US美国(mibei77.com 米贝节点分享) 8
       - US美国(mibei77.com 米贝节点分享) 9
       - US美国(mibei77.com 米贝节点分享) 10
@@ -119,45 +97,33 @@ proxy-groups:
       - US美国(mibei77.com 米贝节点分享) 13
       - US美国(mibei77.com 米贝节点分享) 14
       - US美国(mibei77.com 米贝节点分享) 15
+      - NL荷兰(mibei77.com 米贝节点分享)
       - US美国(mibei77.com 米贝节点分享) 16
-      - DE德国(mibei77.com 米贝节点分享) 5
+      - FR法国(mibei77.com 米贝节点分享) 2
+      - 俄罗斯(mibei77.com 米贝节点分享)
       - US美国(mibei77.com 米贝节点分享) 17
-      - CA加拿大(mibei77.com 米贝节点分享)
-      - US美国(mibei77.com 米贝节点分享) 18
-      - 俄罗斯(mibei77.com 米贝节点分享) 2
-      - DE德国(mibei77.com 米贝节点分享) 6
-      - US美国(mibei77.com 米贝节点分享) 19
-      - US美国(mibei77.com 米贝节点分享) 20
-      - US美国(mibei77.com 米贝节点分享) 21
-      - US美国(mibei77.com 米贝节点分享) 22
-      - US美国(mibei77.com 米贝节点分享) 23
-      - DE德国(mibei77.com 米贝节点分享) 7
-      - US美国(mibei77.com 米贝节点分享) 24
-      - US美国(mibei77.com 米贝节点分享) 25
-      - DE德国(mibei77.com 米贝节点分享) 8
-      - DE德国(mibei77.com 米贝节点分享) 9
-      - DE德国(mibei77.com 米贝节点分享) 10
-      - DE德国(mibei77.com 米贝节点分享) 11
-      - 俄罗斯(mibei77.com 米贝节点分享) 3
+      - DE德国(mibei77.com 米贝节点分享) 4
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - DE德国(mibei77.com 米贝节点分享)
+      - FR法国(mibei77.com 米贝节点分享)
       - US美国(mibei77.com 米贝节点分享)
+      - HK香港(mibei77.com 米贝节点分享)
       - US美国(mibei77.com 米贝节点分享) 2
-      - DE德国(mibei77.com 米贝节点分享) 2
-      - DE德国(mibei77.com 米贝节点分享) 3
-      - 俄罗斯(mibei77.com 米贝节点分享)
+      - DE德国(mibei77.com 米贝节点分享)
       - US美国(mibei77.com 米贝节点分享) 3
       - US美国(mibei77.com 米贝节点分享) 4
+      - JP日本(mibei77.com 米贝节点分享)
+      - HK香港(mibei77.com 米贝节点分享) 2
       - US美国(mibei77.com 米贝节点分享) 5
+      - DE德国(mibei77.com 米贝节点分享) 2
+      - CA加拿大(mibei77.com 米贝节点分享)
       - US美国(mibei77.com 米贝节点分享) 6
-      - DE德国(mibei77.com 米贝节点分享) 4
       - US美国(mibei77.com 米贝节点分享) 7
-      - 卢森堡(mibei77.com 米贝节点分享)
+      - DE德国(mibei77.com 米贝节点分享) 3
       - US美国(mibei77.com 米贝节点分享) 8
       - US美国(mibei77.com 米贝节点分享) 9
       - US美国(mibei77.com 米贝节点分享) 10
@@ -166,26 +132,12 @@ proxy-groups:
       - US美国(mibei77.com 米贝节点分享) 13
       - US美国(mibei77.com 米贝节点分享) 14
       - US美国(mibei77.com 米贝节点分享) 15
+      - NL荷兰(mibei77.com 米贝节点分享)
       - US美国(mibei77.com 米贝节点分享) 16
-      - DE德国(mibei77.com 米贝节点分享) 5
+      - FR法国(mibei77.com 米贝节点分享) 2
+      - 俄罗斯(mibei77.com 米贝节点分享)
       - US美国(mibei77.com 米贝节点分享) 17
-      - CA加拿大(mibei77.com 米贝节点分享)
-      - US美国(mibei77.com 米贝节点分享) 18
-      - 俄罗斯(mibei77.com 米贝节点分享) 2
-      - DE德国(mibei77.com 米贝节点分享) 6
-      - US美国(mibei77.com 米贝节点分享) 19
-      - US美国(mibei77.com 米贝节点分享) 20
-      - US美国(mibei77.com 米贝节点分享) 21
-      - US美国(mibei77.com 米贝节点分享) 22
-      - US美国(mibei77.com 米贝节点分享) 23
-      - DE德国(mibei77.com 米贝节点分享) 7
-      - US美国(mibei77.com 米贝节点分享) 24
-      - US美国(mibei77.com 米贝节点分享) 25
-      - DE德国(mibei77.com 米贝节点分享) 8
-      - DE德国(mibei77.com 米贝节点分享) 9
-      - DE德国(mibei77.com 米贝节点分享) 10
-      - DE德国(mibei77.com 米贝节点分享) 11
-      - 俄罗斯(mibei77.com 米贝节点分享) 3
+      - DE德国(mibei77.com 米贝节点分享) 4
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -204,19 +156,21 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - DE德国(mibei77.com 米贝节点分享)
+      - FR法国(mibei77.com 米贝节点分享)
       - US美国(mibei77.com 米贝节点分享)
+      - HK香港(mibei77.com 米贝节点分享)
       - US美国(mibei77.com 米贝节点分享) 2
-      - DE德国(mibei77.com 米贝节点分享) 2
-      - DE德国(mibei77.com 米贝节点分享) 3
-      - 俄罗斯(mibei77.com 米贝节点分享)
+      - DE德国(mibei77.com 米贝节点分享)
       - US美国(mibei77.com 米贝节点分享) 3
       - US美国(mibei77.com 米贝节点分享) 4
+      - JP日本(mibei77.com 米贝节点分享)
+      - HK香港(mibei77.com 米贝节点分享) 2
       - US美国(mibei77.com 米贝节点分享) 5
+      - DE德国(mibei77.com 米贝节点分享) 2
+      - CA加拿大(mibei77.com 米贝节点分享)
       - US美国(mibei77.com 米贝节点分享) 6
-      - DE德国(mibei77.com 米贝节点分享) 4
       - US美国(mibei77.com 米贝节点分享) 7
-      - 卢森堡(mibei77.com 米贝节点分享)
+      - DE德国(mibei77.com 米贝节点分享) 3
       - US美国(mibei77.com 米贝节点分享) 8
       - US美国(mibei77.com 米贝节点分享) 9
       - US美国(mibei77.com 米贝节点分享) 10
@@ -225,49 +179,39 @@ proxy-groups:
       - US美国(mibei77.com 米贝节点分享) 13
       - US美国(mibei77.com 米贝节点分享) 14
       - US美国(mibei77.com 米贝节点分享) 15
+      - NL荷兰(mibei77.com 米贝节点分享)
       - US美国(mibei77.com 米贝节点分享) 16
-      - DE德国(mibei77.com 米贝节点分享) 5
+      - FR法国(mibei77.com 米贝节点分享) 2
+      - 俄罗斯(mibei77.com 米贝节点分享)
       - US美国(mibei77.com 米贝节点分享) 17
-      - CA加拿大(mibei77.com 米贝节点分享)
-      - US美国(mibei77.com 米贝节点分享) 18
-      - 俄罗斯(mibei77.com 米贝节点分享) 2
-      - DE德国(mibei77.com 米贝节点分享) 6
-      - US美国(mibei77.com 米贝节点分享) 19
-      - US美国(mibei77.com 米贝节点分享) 20
-      - US美国(mibei77.com 米贝节点分享) 21
-      - US美国(mibei77.com 米贝节点分享) 22
-      - US美国(mibei77.com 米贝节点分享) 23
-      - DE德国(mibei77.com 米贝节点分享) 7
-      - US美国(mibei77.com 米贝节点分享) 24
-      - US美国(mibei77.com 米贝节点分享) 25
-      - DE德国(mibei77.com 米贝节点分享) 8
-      - DE德国(mibei77.com 米贝节点分享) 9
-      - DE德国(mibei77.com 米贝节点分享) 10
-      - DE德国(mibei77.com 米贝节点分享) 11
-      - 俄罗斯(mibei77.com 米贝节点分享) 3
+      - DE德国(mibei77.com 米贝节点分享) 4
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - HK香港(mibei77.com 米贝节点分享)
+      - HK香港(mibei77.com 米贝节点分享) 2
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - DE德国(mibei77.com 米贝节点分享)
+      - FR法国(mibei77.com 米贝节点分享)
       - US美国(mibei77.com 米贝节点分享)
+      - HK香港(mibei77.com 米贝节点分享)
       - US美国(mibei77.com 米贝节点分享) 2
-      - DE德国(mibei77.com 米贝节点分享) 2
-      - DE德国(mibei77.com 米贝节点分享) 3
-      - 俄罗斯(mibei77.com 米贝节点分享)
+      - DE德国(mibei77.com 米贝节点分享)
       - US美国(mibei77.com 米贝节点分享) 3
       - US美国(mibei77.com 米贝节点分享) 4
+      - JP日本(mibei77.com 米贝节点分享)
+      - HK香港(mibei77.com 米贝节点分享) 2
       - US美国(mibei77.com 米贝节点分享) 5
+      - DE德国(mibei77.com 米贝节点分享) 2
+      - CA加拿大(mibei77.com 米贝节点分享)
       - US美国(mibei77.com 米贝节点分享) 6
-      - DE德国(mibei77.com 米贝节点分享) 4
       - US美国(mibei77.com 米贝节点分享) 7
-      - 卢森堡(mibei77.com 米贝节点分享)
+      - DE德国(mibei77.com 米贝节点分享) 3
       - US美国(mibei77.com 米贝节点分享) 8
       - US美国(mibei77.com 米贝节点分享) 9
       - US美国(mibei77.com 米贝节点分享) 10
@@ -276,44 +220,32 @@ proxy-groups:
       - US美国(mibei77.com 米贝节点分享) 13
       - US美国(mibei77.com 米贝节点分享) 14
       - US美国(mibei77.com 米贝节点分享) 15
+      - NL荷兰(mibei77.com 米贝节点分享)
       - US美国(mibei77.com 米贝节点分享) 16
-      - DE德国(mibei77.com 米贝节点分享) 5
+      - FR法国(mibei77.com 米贝节点分享) 2
+      - 俄罗斯(mibei77.com 米贝节点分享)
       - US美国(mibei77.com 米贝节点分享) 17
-      - CA加拿大(mibei77.com 米贝节点分享)
-      - US美国(mibei77.com 米贝节点分享) 18
-      - 俄罗斯(mibei77.com 米贝节点分享) 2
-      - DE德国(mibei77.com 米贝节点分享) 6
-      - US美国(mibei77.com 米贝节点分享) 19
-      - US美国(mibei77.com 米贝节点分享) 20
-      - US美国(mibei77.com 米贝节点分享) 21
-      - US美国(mibei77.com 米贝节点分享) 22
-      - US美国(mibei77.com 米贝节点分享) 23
-      - DE德国(mibei77.com 米贝节点分享) 7
-      - US美国(mibei77.com 米贝节点分享) 24
-      - US美国(mibei77.com 米贝节点分享) 25
-      - DE德国(mibei77.com 米贝节点分享) 8
-      - DE德国(mibei77.com 米贝节点分享) 9
-      - DE德国(mibei77.com 米贝节点分享) 10
-      - DE德国(mibei77.com 米贝节点分享) 11
-      - 俄罗斯(mibei77.com 米贝节点分享) 3
+      - DE德国(mibei77.com 米贝节点分享) 4
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - DE德国(mibei77.com 米贝节点分享)
+      - FR法国(mibei77.com 米贝节点分享)
       - US美国(mibei77.com 米贝节点分享)
+      - HK香港(mibei77.com 米贝节点分享)
       - US美国(mibei77.com 米贝节点分享) 2
-      - DE德国(mibei77.com 米贝节点分享) 2
-      - DE德国(mibei77.com 米贝节点分享) 3
-      - 俄罗斯(mibei77.com 米贝节点分享)
+      - DE德国(mibei77.com 米贝节点分享)
       - US美国(mibei77.com 米贝节点分享) 3
       - US美国(mibei77.com 米贝节点分享) 4
+      - JP日本(mibei77.com 米贝节点分享)
+      - HK香港(mibei77.com 米贝节点分享) 2
       - US美国(mibei77.com 米贝节点分享) 5
+      - DE德国(mibei77.com 米贝节点分享) 2
+      - CA加拿大(mibei77.com 米贝节点分享)
       - US美国(mibei77.com 米贝节点分享) 6
-      - DE德国(mibei77.com 米贝节点分享) 4
       - US美国(mibei77.com 米贝节点分享) 7
-      - 卢森堡(mibei77.com 米贝节点分享)
+      - DE德国(mibei77.com 米贝节点分享) 3
       - US美国(mibei77.com 米贝节点分享) 8
       - US美国(mibei77.com 米贝节点分享) 9
       - US美国(mibei77.com 米贝节点分享) 10
@@ -322,45 +254,33 @@ proxy-groups:
       - US美国(mibei77.com 米贝节点分享) 13
       - US美国(mibei77.com 米贝节点分享) 14
       - US美国(mibei77.com 米贝节点分享) 15
+      - NL荷兰(mibei77.com 米贝节点分享)
       - US美国(mibei77.com 米贝节点分享) 16
-      - DE德国(mibei77.com 米贝节点分享) 5
+      - FR法国(mibei77.com 米贝节点分享) 2
+      - 俄罗斯(mibei77.com 米贝节点分享)
       - US美国(mibei77.com 米贝节点分享) 17
-      - CA加拿大(mibei77.com 米贝节点分享)
-      - US美国(mibei77.com 米贝节点分享) 18
-      - 俄罗斯(mibei77.com 米贝节点分享) 2
-      - DE德国(mibei77.com 米贝节点分享) 6
-      - US美国(mibei77.com 米贝节点分享) 19
-      - US美国(mibei77.com 米贝节点分享) 20
-      - US美国(mibei77.com 米贝节点分享) 21
-      - US美国(mibei77.com 米贝节点分享) 22
-      - US美国(mibei77.com 米贝节点分享) 23
-      - DE德国(mibei77.com 米贝节点分享) 7
-      - US美国(mibei77.com 米贝节点分享) 24
-      - US美国(mibei77.com 米贝节点分享) 25
-      - DE德国(mibei77.com 米贝节点分享) 8
-      - DE德国(mibei77.com 米贝节点分享) 9
-      - DE德国(mibei77.com 米贝节点分享) 10
-      - DE德国(mibei77.com 米贝节点分享) 11
-      - 俄罗斯(mibei77.com 米贝节点分享) 3
+      - DE德国(mibei77.com 米贝节点分享) 4
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - DE德国(mibei77.com 米贝节点分享)
+      - FR法国(mibei77.com 米贝节点分享)
       - US美国(mibei77.com 米贝节点分享)
+      - HK香港(mibei77.com 米贝节点分享)
       - US美国(mibei77.com 米贝节点分享) 2
-      - DE德国(mibei77.com 米贝节点分享) 2
-      - DE德国(mibei77.com 米贝节点分享) 3
-      - 俄罗斯(mibei77.com 米贝节点分享)
+      - DE德国(mibei77.com 米贝节点分享)
       - US美国(mibei77.com 米贝节点分享) 3
       - US美国(mibei77.com 米贝节点分享) 4
+      - JP日本(mibei77.com 米贝节点分享)
+      - HK香港(mibei77.com 米贝节点分享) 2
       - US美国(mibei77.com 米贝节点分享) 5
+      - DE德国(mibei77.com 米贝节点分享) 2
+      - CA加拿大(mibei77.com 米贝节点分享)
       - US美国(mibei77.com 米贝节点分享) 6
-      - DE德国(mibei77.com 米贝节点分享) 4
       - US美国(mibei77.com 米贝节点分享) 7
-      - 卢森堡(mibei77.com 米贝节点分享)
+      - DE德国(mibei77.com 米贝节点分享) 3
       - US美国(mibei77.com 米贝节点分享) 8
       - US美国(mibei77.com 米贝节点分享) 9
       - US美国(mibei77.com 米贝节点分享) 10
@@ -369,26 +289,12 @@ proxy-groups:
       - US美国(mibei77.com 米贝节点分享) 13
       - US美国(mibei77.com 米贝节点分享) 14
       - US美国(mibei77.com 米贝节点分享) 15
+      - NL荷兰(mibei77.com 米贝节点分享)
       - US美国(mibei77.com 米贝节点分享) 16
-      - DE德国(mibei77.com 米贝节点分享) 5
+      - FR法国(mibei77.com 米贝节点分享) 2
+      - 俄罗斯(mibei77.com 米贝节点分享)
       - US美国(mibei77.com 米贝节点分享) 17
-      - CA加拿大(mibei77.com 米贝节点分享)
-      - US美国(mibei77.com 米贝节点分享) 18
-      - 俄罗斯(mibei77.com 米贝节点分享) 2
-      - DE德国(mibei77.com 米贝节点分享) 6
-      - US美国(mibei77.com 米贝节点分享) 19
-      - US美国(mibei77.com 米贝节点分享) 20
-      - US美国(mibei77.com 米贝节点分享) 21
-      - US美国(mibei77.com 米贝节点分享) 22
-      - US美国(mibei77.com 米贝节点分享) 23
-      - DE德国(mibei77.com 米贝节点分享) 7
-      - US美国(mibei77.com 米贝节点分享) 24
-      - US美国(mibei77.com 米贝节点分享) 25
-      - DE德国(mibei77.com 米贝节点分享) 8
-      - DE德国(mibei77.com 米贝节点分享) 9
-      - DE德国(mibei77.com 米贝节点分享) 10
-      - DE德国(mibei77.com 米贝节点分享) 11
-      - 俄罗斯(mibei77.com 米贝节点分享) 3
+      - DE德国(mibei77.com 米贝节点分享) 4
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -404,19 +310,21 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - DE德国(mibei77.com 米贝节点分享)
+      - FR法国(mibei77.com 米贝节点分享)
       - US美国(mibei77.com 米贝节点分享)
+      - HK香港(mibei77.com 米贝节点分享)
       - US美国(mibei77.com 米贝节点分享) 2
-      - DE德国(mibei77.com 米贝节点分享) 2
-      - DE德国(mibei77.com 米贝节点分享) 3
-      - 俄罗斯(mibei77.com 米贝节点分享)
+      - DE德国(mibei77.com 米贝节点分享)
       - US美国(mibei77.com 米贝节点分享) 3
       - US美国(mibei77.com 米贝节点分享) 4
+      - JP日本(mibei77.com 米贝节点分享)
+      - HK香港(mibei77.com 米贝节点分享) 2
       - US美国(mibei77.com 米贝节点分享) 5
+      - DE德国(mibei77.com 米贝节点分享) 2
+      - CA加拿大(mibei77.com 米贝节点分享)
       - US美国(mibei77.com 米贝节点分享) 6
-      - DE德国(mibei77.com 米贝节点分享) 4
       - US美国(mibei77.com 米贝节点分享) 7
-      - 卢森堡(mibei77.com 米贝节点分享)
+      - DE德国(mibei77.com 米贝节点分享) 3
       - US美国(mibei77.com 米贝节点分享) 8
       - US美国(mibei77.com 米贝节点分享) 9
       - US美国(mibei77.com 米贝节点分享) 10
@@ -425,26 +333,12 @@ proxy-groups:
       - US美国(mibei77.com 米贝节点分享) 13
       - US美国(mibei77.com 米贝节点分享) 14
       - US美国(mibei77.com 米贝节点分享) 15
+      - NL荷兰(mibei77.com 米贝节点分享)
       - US美国(mibei77.com 米贝节点分享) 16
-      - DE德国(mibei77.com 米贝节点分享) 5
+      - FR法国(mibei77.com 米贝节点分享) 2
+      - 俄罗斯(mibei77.com 米贝节点分享)
       - US美国(mibei77.com 米贝节点分享) 17
-      - CA加拿大(mibei77.com 米贝节点分享)
-      - US美国(mibei77.com 米贝节点分享) 18
-      - 俄罗斯(mibei77.com 米贝节点分享) 2
-      - DE德国(mibei77.com 米贝节点分享) 6
-      - US美国(mibei77.com 米贝节点分享) 19
-      - US美国(mibei77.com 米贝节点分享) 20
-      - US美国(mibei77.com 米贝节点分享) 21
-      - US美国(mibei77.com 米贝节点分享) 22
-      - US美国(mibei77.com 米贝节点分享) 23
-      - DE德国(mibei77.com 米贝节点分享) 7
-      - US美国(mibei77.com 米贝节点分享) 24
-      - US美国(mibei77.com 米贝节点分享) 25
-      - DE德国(mibei77.com 米贝节点分享) 8
-      - DE德国(mibei77.com 米贝节点分享) 9
-      - DE德国(mibei77.com 米贝节点分享) 10
-      - DE德国(mibei77.com 米贝节点分享) 11
-      - 俄罗斯(mibei77.com 米贝节点分享) 3
+      - DE德国(mibei77.com 米贝节点分享) 4
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
