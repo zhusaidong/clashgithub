@@ -26,6 +26,8 @@ jobs:
         wget --tries=2 --wait=10 --timeout=15 "https://clashnode.github.io/uploads/$(date +'%Y')/$(date +'%m')/2-$(date -d "yesterday" +'%Y%m%d').yaml" -O clash-clashnode.github.io-2.yml || true
         sed -i 's/6元高速机场:cczzuu.top/高性价比机场:https:\/\/kfyun.uk/g' clash-clashnode.github.io-2.yml
         sed -i 's/高性价比机场:cczzuu.top/高性价比机场:https:\/\/kfyun.uk/g' clash-clashnode.github.io-2.yml
+        sed -i 's/<pre style="word-wrap: break-word; white-space: pre-wrap;">//g' clash-clashnode.github.io-2.yml
+        sed -i 's/</pre>//g' clash-clashnode.github.io-2.yml
         
         wget --tries=2 --wait=10 --timeout=15 "https://clashnode.github.io/uploads/$(date +'%Y')/$(date +'%m')/3-$(date -d "yesterday" +'%Y%m%d').yaml" -O clash-clashnode.github.io-3.yml || true
         wget --tries=2 --wait=10 --timeout=15 "https://clashnode.github.io/uploads/$(date +'%Y')/$(date +'%m')/4-$(date -d "yesterday" +'%Y%m%d').yaml"  -O clash-clashnode.github.io-4.yml || true
@@ -34,6 +36,8 @@ jobs:
 
         wget --tries=2 --wait=10 --timeout=15 "https://www.stairnode.com/node/$(date -d "yesterday" +'%Y%m%d')-clash.yaml" -O clash-www.stairnode.com.yml || true
         sed -i 's/6元高速机场:cczzuu.top/高性价比机场:https:\/\/kfyun.uk/g' clash-www.stairnode.com.yml
+        sed -i 's/<pre style="word-wrap: break-word; white-space: pre-wrap;">//g' clash-www.stairnode.com.yml
+        sed -i 's/</pre>//g' clash-www.stairnode.com.yml
 
         #https://nodefree.githubrowcontent.com/2024/07/20240729.yaml
         #NodeFree: https://nodefree.org/dy/2024/07/20240725.yaml ★
