@@ -3,439 +3,567 @@ socks-port: 7891
 allow-lan: true
 mode: Rule
 log-level: info
-external-controller: 127.0.0.1:9090
+external-controller: :9090
 proxies:
-  - {name: 6元高速机场：cczzuu.top, server: 23.157.40.5, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 北美地区 cczzuu.top 2, server: 23.157.40.87, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 北美地区 cczzuu.top 3, server: 23.157.40.87, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 美国 Fastly全球Anycast节点, server: 151.101.194.133, port: 443, type: vmess, uuid: c69f3029-ae1e-45ca-aa08-70970f14dfd2, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: "/racevpn?telegram@ISVvpn-telegram@ISVvpn-telegram@ISVvpn", headers: {Host: telegram-isvvpn.ir}}}
-  - {name: 新加坡 Amazon数据中心, server: 52.77.42.69, port: 443, type: trojan, password: !<str> 3753679206639476736, sni: choice-condor.treefrog761.one, skip-cert-verify: true}
-  - {name: 美国 CloudFlare节点, server: s1.db-link02.top, port: 80, type: vmess, uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /dabai.in104.17.169.115, headers: {Host: 100-49-141-209.s1.db-link02.top}}}
-  - {name: 德国 黑森州法兰克福Amazon数据中心, server: 18.195.76.14, port: 22222, type: trojan, password: telegram-id-directvpn, sni: trojan.burgerip.co.uk}
-  - {name: 广东省广州市 移动, server: 120.232.217.96, port: 21332, type: trojan, password: 7daf833c-37b9-4afc-8495-96590f03f781, sni: 120.232.217.96, skip-cert-verify: true}
-  - {name: 美国 CloudFlare节点 2, server: s1.cn-db.top, port: 2052, type: vmess, uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: 100-185-39-111.s1.cn-db.top}}}
-  - {name: 美国 CloudFlare节点 3, server: s1.db-link02.top, port: 2082, type: vmess, uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: 100-6-81-226.s1.db-link02.top}}}
-  - {name: 南非豪登省约翰内斯堡 Cloudinnovation数据中心, server: 156.244.9.92, port: 990, type: ss, cipher: chacha20-ietf-poly1305, password: f8f7aCzcPKbsF8p3}
-  - {name: 美国 CloudFlare节点 4, server: s2.db-link02.top, port: 8080, type: vmess, uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: 100-233-189-231.s2.db-link02.top}}}
-  - {name: 波兰 cczzuu.top, server: 193.243.147.128, port: 40368, type: ss, cipher: aes-256-gcm, password: 7BcLdsO1WweoGD0X}
-  - {name: 印度 cczzuu.top, server: 202.78.162.5, port: 443, type: vmess, uuid: 118287d2-e968-42e1-80d0-12fa2f5d38d6, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: sahand.serveminecraft.net}}}
-  - {name: 广东省广州市荔湾区 /天河区电信, server: w72tapyb.slashdevslashnetslashtun.net, port: 16016, type: ss, cipher: aes-256-gcm, password: 6KYL3YM7UAOAE94Q}
-  - {name: 美国 cczzuu.top, server: 208.67.105.87, port: 42501, type: ss, cipher: chacha20-ietf-poly1305, password: nq96KftrZAj3LuFQESqmn44Mo5oCuo2cipoEsae25mrmHG2oJ4VT37scBfVBpN5DWtUELZutVhhXs8Le5B8fZ9hLn9ytwvbf}
-  - {name: 美国 亚特兰大, server: us01.trojanyyds.xyz, port: 443, type: trojan, password: 243eab52-9ac1-405c-887c-eb112c0985b8, sni: us01.trojanyyds.xyz}
-  - {name: 江苏省 移动, server: 36.150.215.220, port: 48544, type: trojan, password: vzhXXZVw}
-  - {name: 伊朗 cczzuu.top, server: 83.147.216.173, port: 9848, type: ss, cipher: chacha20-ietf-poly1305, password: zUQvFioae7KzAZ2GCMgNum}
-  - {name: 北美地区 cczzuu.top 4, server: 23.157.40.87, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 北美地区 cczzuu.top 5, server: 23.157.40.5, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
-  - {name: 印度 cczzuu.top 2, server: 202.78.162.5, port: 443, type: vmess, uuid: 716eded6-2201-4dbd-9d63-1638c9e8e677, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: pendar.onthewifi.com}}}
-  - {name: 澳大利亚 cczzuu.top, server: 160.30.21.105, port: 443, type: trojan, password: 94d219c9-1afc-4d42-b090-8b3794764380, sni: std1.loadingip.com}
-  - {name: 俄罗斯 Rubtsovsk Branch of Altai State University, server: 212.192.12.70, port: 55899, type: vmess, uuid: 1cc59a3a-9625-40f7-b0e6-e233286ae82d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 美国 Sprint网络, server: 63.176.87.166, port: 22222, type: trojan, password: telegram-id-directvpn, sni: trojan.burgerip.co.uk}
-  - {name: 北美地区 cczzuu.top 6, server: 23.157.40.5, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 俄罗斯 cczzuu.top, server: 195.58.49.86, port: 55899, type: vmess, uuid: 1cc59a3a-9625-40f7-b0e6-e233286ae82d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 北美地区 cczzuu.top 7, server: 23.157.40.87, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
-  - {name: 广东省广州市 移动 2, server: naiu-jp.05vr9nyqg5.download, port: 13012, type: trojan, password: e279c494-c426-443a-a034-a04516409242, sni: cloudflare.node-ssl.cdn-alibaba.com, skip-cert-verify: false}
-  - {name: 拉脱维亚 cczzuu.top, server: 46.183.217.232, port: 990, type: ss, cipher: chacha20-ietf-poly1305, password: f8f7aCzcPKbsF8p3}
-  - {name: 美国 Fastly全球Anycast节点 2, server: bia-vpn-whal.fast.hosting-ip.com, port: 80, type: vmess, uuid: 2105e050-2498-4229-8df2-28c55947cd49, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=80/#id-telegram:--->@vpn_whal<---", headers: {Host: khamenei-313.IR.}}}
-  - {name: 美国 CloudFlare节点 5, server: s2.db-link02.top, port: 2086, type: vmess, uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /dabai.in172.64.43.14, headers: {Host: 100-171-104-238.s2.db-link02.top}}}
-  - {name: 英国 社会保险安全部, server: 51.24.47.187, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk}
-  - {name: 美国 CloudFlare节点 6, server: 104.16.155.10, port: 2095, type: vmess, uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /dabai.in104.20.27.115, headers: {Host: 100-209-47-141.s2.db-link02.top}}}
-  - {name: 法国 巴黎Amazon数据中心, server: 35.181.68.177, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk}
-  - {name: 爱尔兰 都柏林Amazon数据中心, server: 54.72.188.173, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk}
-  - {name: 海南省 移动(全省通用), server: cm1.awslcn.info, port: 25230, type: vmess, uuid: 243eab52-9ac1-405c-887c-eb112c0985b8, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: cm1.awslcn.info}}}
-  - {name: 美国 CloudFlare节点 7, server: s2.cn-db.top, port: 2095, type: vmess, uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /dabai.in104.21.15.107, headers: {Host: 100-105-115-119.s2.cn-db.top}}}
-  - {name: 北美地区 cczzuu.top 8, server: 23.157.40.5, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 北美地区 cczzuu.top 9, server: 23.157.40.87, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: 北美地区 cczzuu.top 10, server: 23.157.40.5, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 印度 cczzuu.top 3, server: 202.78.162.5, port: 443, type: vmess, uuid: 2ff97c6d-8557-42a4-b43f-19c77c5959ea, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: irsoft.sytes.net}}}
-  - {name: 美国 CloudFlare节点 8, server: 104.16.155.10, port: 2086, type: vmess, uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /dabai.in104.24.43.124, headers: {Host: 100-237-59-154.s3.cn-db.top}}}
-  - {name: 北美地区 cczzuu.top 11, server: 23.157.40.87, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
-  - {name: 法国 法国计算机科学大学, server: irvideo.cfd, port: 443, type: vmess, uuid: e537f2f5-2a0c-4f59-92c9-832ca6433bf3, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /linkws, headers: {Host: irvideo.cfd}}}
-  - {name: 美国 CloudFlare节点 9, server: 104.16.60.8, port: 80, type: vmess, uuid: 6c168fcc-2231-4f3b-8c1e-f6391692df4a, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /hms02.fxiaomi.sbs/link, headers: {Host: range-shape-b3fuegu.bananok182.workers.dev}}}
-  - {name: 瑞典 cczzuu.top, server: 167.88.63.21, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
-  - {name: 美国 Amazon数据中心, server: 13.36.88.91, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk}
-  - {name: 江苏省 移动 2, server: 36.150.215.222, port: 12524, type: trojan, password: vzhXXZVw, skip-cert-verify: true}
+  - {name: 6元高速机场:https://cczzuu.top, server: 127.0.0.1, port: 443, type: ss, cipher: aes-128-gcm, password: 6601fb90e9b3}
+  - {name: 0|--2, server: 222.112.15.141, port: 38471, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@}
+  - {name: 0|--3, server: 3.1.204.240, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: 0|--4, server: 185.189.160.98, port: 64759, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@}
+  - {name: 0|--7, server: 195.15.254.25, port: 54748, type: ss, cipher: chacha20-ietf-poly1305, password: ghBuJ9pZOF9MohhGyPjo3rvilQhlw9NzBDlOVDonQN0=}
+  - {name: 0|--8, server: 221.150.109.88, port: 59686, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@}
+  - {name: 0|--9, server: 168.126.234.233, port: 40915, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@}
+  - {name: 0|--10, server: 45.87.175.157, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: 4a2rfixophdjffa8KVA4Aa}
+  - {name: 0|--11, server: 27.255.82.135, port: 61891, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@}
+  - {name: 0|--12, server: 45.87.175.157, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: cvII85TrW6n0OGyfpHVS1u}
+  - {name: 0|--14, server: 54.179.104.38, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: 0|--15, server: 13.250.30.129, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: 0|--16, server: 18.142.51.90, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: 0|--17, server: series-a2-mec.varzesh360.co, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: u17T3BvpYaaiuW2c}
+  - {name: 0|--19, server: 13.113.190.198, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: 0|--28, server: 38.174.190.80, port: 38007, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/102206282005}}
+  - {name: "13,14|香港 ", server: 36.150.215.196, port: 34188, type: trojan, password: phXKwfrd, skip-cert-verify: true}
+  - {name: "13,14|香港2 ", server: 223.113.54.145, port: 36442, type: trojan, password: phXKwfrd, skip-cert-verify: true}
+  - {name: 13|🇭🇰 香港3 , server: 45.250.184.183, port: 6181, type: ss, cipher: chacha20-ietf-poly1305, password: 11a805f2-41a7-4cd8-8406-0470c3cde0d3}
+  - {name: 13|🇭🇰 香港4 , server: 183.236.51.23, port: 53002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false}
+  - {name: 13|🇭🇰 香港5 , server: 8tv68qhq.slashdevslashnetslashtun.net, port: 15005, type: ss, cipher: aes-256-gcm, password: NFYDVXE3DMWI2M3W}
+  - {name: 13|🇭🇰 香港6 , server: ti3hyra4.slashdevslashnetslashtun.net, port: 15010, type: ss, cipher: aes-256-gcm, password: YPNNBXGRNCAXB9N7}
+  - {name: 13|🇭🇰 香港7 , server: dns.a123.my, port: 44471, type: ss, cipher: chacha20-ietf-poly1305, password: 3a2ba863-cbce-4991-84ac-4505c2253183}
+  - {name: "13,14|香港8 ", server: gy.58n.net, port: 24603, type: trojan, password: 315f744a-c705-3e58-96d9-35f0a8d3310c, sni: z259.hongkongnode.top, skip-cert-verify: false}
+  - {name: "13,14|台湾 ", server: tw01.trojanyyds.xyz, port: 443, type: trojan, password: 243eab52-9ac1-405c-887c-eb112c0985b8, sni: tw01.trojanyyds.xyz, skip-cert-verify: false}
+  - {name: "13,14|台湾2 ", server: 74.226.136.204, port: 443, type: trojan, password: 243eab52-9ac1-405c-887c-eb112c0985b8, sni: tw02.trojanyyds.xyz, skip-cert-verify: false}
+  - {name: 13|🇹🇼 台湾3 , server: dns.a123.my, port: 11170, type: ss, cipher: aes-256-gcm, password: 3a2ba863-cbce-4991-84ac-4505c2253183}
+  - {name: "13,14|日本 ", server: naiu-jp.05vr9nyqg5.download, port: 13012, type: trojan, password: e279c494-c426-443a-a034-a04516409242, sni: cloudflare.node-ssl.cdn-alibaba.com, skip-cert-verify: false}
+  - {name: "13,14|日本2 ", server: jp.cowvpn.org, port: 443, type: vmess, uuid: 11a805f2-41a7-4cd8-8406-0470c3cde0d3, alterId: 0, cipher: auto, tls: true, servername: jpcf.cowvpn.org, network: ws, ws-opts: {path: /cctv13/vmess_jpcf, headers: {Host: jpcf.cowvpn.org}}}
+  - {name: 13|🇯🇵 日本3 , server: w72tapyb.slashdevslashnetslashtun.net, port: 18016, type: ss, cipher: aes-256-gcm, password: D56RP4I5E1CWLAE3}
+  - {name: 13|🇯🇵 日本4 , server: 8tv68qhq.slashdevslashnetslashtun.net, port: 18001, type: ss, cipher: aes-256-gcm, password: MMRTIYVECN33018T}
+  - {name: 13|🇯🇵 日本5 , server: dns.a123.my, port: 23910, type: ss, cipher: chacha20-ietf-poly1305, password: 3a2ba863-cbce-4991-84ac-4505c2253183}
+  - {name: 13|🇸🇬 新加坡 , server: ctmm.gscloud.bond, port: 31620, type: ss, cipher: chacha20-ietf-poly1305, password: f16d3752-7bae-474e-87dc-f892df2caeaf}
+  - {name: "13,14|新加坡2 ", server: major-reindeer.boa152.lol, port: 443, type: trojan, password: !<str> 3723507166611775488, sni: major-reindeer.boa152.lol, skip-cert-verify: false}
+  - {name: 13|🇸🇬 新加坡3 , server: w72tapyb.slashdevslashnetslashtun.net, port: 16016, type: ss, cipher: aes-256-gcm, password: 6KYL3YM7UAOAE94Q}
+  - {name: 13|🇺🇸 美国 , server: sg02.trojanyyds.xyz, port: 443, type: trojan, password: 243eab52-9ac1-405c-887c-eb112c0985b8, sni: sg02.trojanyyds.xyz, skip-cert-verify: false}
+  - {name: 13|🇺🇸 美国2 , server: 8tv68qhq.slashdevslashnetslashtun.net, port: 17001, type: ss, cipher: aes-256-gcm, password: QBNVUDH1J62ZEVWK}
+  - {name: "13,14|美国3 ", server: us1.cowvpn.org, port: 443, type: vmess, uuid: 11a805f2-41a7-4cd8-8406-0470c3cde0d3, alterId: 0, cipher: auto, tls: true, servername: us1cf.cowvpn.org, network: ws, ws-opts: {path: /cctv13/vmess_us1cf, headers: {Host: us1cf.cowvpn.org}}}
+  - {name: 13|🇺🇸 美国4 , server: dns.a123.my, port: 53120, type: ss, cipher: chacha20-ietf-poly1305, password: 3a2ba863-cbce-4991-84ac-4505c2253183}
+  - {name: 13|🇯🇵 日本特殊 , server: 52.198.226.5, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: 13|🇸🇬 狮城特殊 , server: 13.124.147.239, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: 13|🇰🇷 韩国特殊 , server: 18.183.217.250, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: 14|香港3 , server: 45.250.184.183, port: 6181, type: ss, cipher: ss, password: //Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxMWE4MDVmMi00MWE3LTRjZDgtODQwNi0wNDcwYzNjZGUwZDM}
+  - {name: 14|香港4 , server: 183.236.51.23, port: 53002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false}
+  - {name: 14|香港5 , server: 8tv68qhq.slashdevslashnetslashtun.net, port: 15005, type: ss, cipher: ss, password: //YWVzLTI1Ni1nY206TkZZRFZYRTNETVdJMk0zVw}
+  - {name: 14|香港6 , server: ti3hyra4.slashdevslashnetslashtun.net, port: 15010, type: ss, cipher: ss, password: //YWVzLTI1Ni1nY206WVBOTkJYR1JOQ0FYQjlONw}
+  - {name: 14|香港7 , server: dns.a123.my, port: 44471, type: ss, cipher: ss, password: //Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTozYTJiYTg2My1jYmNlLTQ5OTEtODRhYy00NTA1YzIyNTMxODM}
+  - {name: 14|台湾3 , server: dns.a123.my, port: 11170, type: ss, cipher: ss, password: //YWVzLTI1Ni1nY206M2EyYmE4NjMtY2JjZS00OTkxLTg0YWMtNDUwNWMyMjUzMTgz}
+  - {name: 14|日本3 , server: w72tapyb.slashdevslashnetslashtun.net, port: 18016, type: ss, cipher: ss, password: //YWVzLTI1Ni1nY206RDU2UlA0STVFMUNXTEFFMw}
+  - {name: 14|日本4 , server: 8tv68qhq.slashdevslashnetslashtun.net, port: 18001, type: ss, cipher: ss, password: //YWVzLTI1Ni1nY206TU1SVElZVkVDTjMzMDE4VA}
+  - {name: 14|日本5 , server: dns.a123.my, port: 23910, type: ss, cipher: ss, password: //Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTozYTJiYTg2My1jYmNlLTQ5OTEtODRhYy00NTA1YzIyNTMxODM}
+  - {name: 14|新加坡 , server: ctmm.gscloud.bond, port: 31620, type: ss, cipher: ss, password: //Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpmMTZkMzc1Mi03YmFlLTQ3NGUtODdkYy1mODkyZGYyY2FlYWY}
+  - {name: 14|新加坡3 , server: w72tapyb.slashdevslashnetslashtun.net, port: 16016, type: ss, cipher: ss, password: //YWVzLTI1Ni1nY206NktZTDNZTTdVQU9BRTk0UQ}
+  - {name: 14|美国 , server: sg02.trojanyyds.xyz, port: 443, type: trojan, password: 243eab52-9ac1-405c-887c-eb112c0985b8}
+  - {name: 14|美国2 , server: 8tv68qhq.slashdevslashnetslashtun.net, port: 17001, type: ss, cipher: ss, password: //YWVzLTI1Ni1nY206UUJOVlVESDFKNjJaRVZXSw}
+  - {name: 14|美国4 , server: dns.a123.my, port: 53120, type: ss, cipher: ss, password: //Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTozYTJiYTg2My1jYmNlLTQ5OTEtODRhYy00NTA1YzIyNTMxODM}
+  - {name: 14|日本特殊 , server: 52.198.226.5, port: 443, type: ss, cipher: ss, password: //YWVzLTI1Ni1jZmI6YW1hem9uc2tyMDU}
+  - {name: 14|狮城特殊 , server: 13.124.147.239, port: 443, type: ss, cipher: ss, password: //YWVzLTI1Ni1jZmI6YW1hem9uc2tyMDU}
+  - {name: 14|韩国特殊 , server: 18.183.217.250, port: 443, type: ss, cipher: ss, password: //YWVzLTI1Ni1jZmI6YW1hem9uc2tyMDU}
+  - {name: 15|CN_speednode_0001, server: 36.150.215.222, port: 12524, type: trojan, password: vzhXXZVw, skip-cert-verify: true}
+  - {name: 15|DE_speednode_0006, server: 3.127.116.35, port: 1935, type: trojan, password: Oe5CMj3tiO, sni: x2ger-amazon.devefun.net, skip-cert-verify: false}
+  - {name: 15|ES_speednode_0010, server: 93.189.94.159, port: 1935, type: trojan, password: 9Bb6wjlTOA, sni: x14spain.devefun.net, skip-cert-verify: false}
+  - {name: 15|FR_speednode_0012, server: 13.39.244.105, port: 1935, type: trojan, password: JFchk1TxFG, sni: x1fr-amazon.devefun.net, skip-cert-verify: false}
+  - {name: 16|d*********g.com_2, server: 42.236.73.72, port: 443, type: vmess, uuid: 044f0177-0675-4dcf-89d4-804b6788e518, alterId: 0, cipher: auto, tls: true, servername: www.zitian.cn}
+  - {name: 16|d*********g.com_3, server: 42.236.73.72, port: 443, type: trojan, password: fuck, sni: www.zitian.cn}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 北美地区 cczzuu.top
-      - 北美地区 cczzuu.top 2
-      - 北美地区 cczzuu.top 3
-      - 美国 Fastly全球Anycast节点
-      - 新加坡 Amazon数据中心
-      - 美国 CloudFlare节点
-      - 德国 黑森州法兰克福Amazon数据中心
-      - 广东省广州市 移动
-      - 美国 CloudFlare节点 2
-      - 美国 CloudFlare节点 3
-      - 南非豪登省约翰内斯堡 Cloudinnovation数据中心
-      - 美国 CloudFlare节点 4
-      - 波兰 cczzuu.top
-      - 印度 cczzuu.top
-      - 广东省广州市荔湾区 /天河区电信
-      - 美国 cczzuu.top
-      - 美国 亚特兰大
-      - 江苏省 移动
-      - 伊朗 cczzuu.top
-      - 北美地区 cczzuu.top 4
-      - 北美地区 cczzuu.top 5
-      - 印度 cczzuu.top 2
-      - 澳大利亚 cczzuu.top
-      - 俄罗斯 Rubtsovsk Branch of Altai State University
-      - 美国 Sprint网络
-      - 北美地区 cczzuu.top 6
-      - 俄罗斯 cczzuu.top
-      - 北美地区 cczzuu.top 7
-      - 广东省广州市 移动 2
-      - 拉脱维亚 cczzuu.top
-      - 美国 Fastly全球Anycast节点 2
-      - 美国 CloudFlare节点 5
-      - 英国 社会保险安全部
-      - 美国 CloudFlare节点 6
-      - 法国 巴黎Amazon数据中心
-      - 爱尔兰 都柏林Amazon数据中心
-      - 海南省 移动(全省通用)
-      - 美国 CloudFlare节点 7
-      - 北美地区 cczzuu.top 8
-      - 北美地区 cczzuu.top 9
-      - 北美地区 cczzuu.top 10
-      - 印度 cczzuu.top 3
-      - 美国 CloudFlare节点 8
-      - 北美地区 cczzuu.top 11
-      - 法国 法国计算机科学大学
-      - 美国 CloudFlare节点 9
-      - 瑞典 cczzuu.top
-      - 美国 Amazon数据中心
-      - 江苏省 移动 2
+      - 6元高速机场:https://cczzuu.top
+      - 0|--2
+      - 0|--3
+      - 0|--4
+      - 0|--7
+      - 0|--8
+      - 0|--9
+      - 0|--10
+      - 0|--11
+      - 0|--12
+      - 0|--14
+      - 0|--15
+      - 0|--16
+      - 0|--17
+      - 0|--19
+      - 0|--28
+      - 13,14|香港 
+      - 13,14|香港2 
+      - 13|🇭🇰 香港3 
+      - 13|🇭🇰 香港4 
+      - 13|🇭🇰 香港5 
+      - 13|🇭🇰 香港6 
+      - 13|🇭🇰 香港7 
+      - 13,14|香港8 
+      - 13,14|台湾 
+      - 13,14|台湾2 
+      - 13|🇹🇼 台湾3 
+      - 13,14|日本 
+      - 13,14|日本2 
+      - 13|🇯🇵 日本3 
+      - 13|🇯🇵 日本4 
+      - 13|🇯🇵 日本5 
+      - 13|🇸🇬 新加坡 
+      - 13,14|新加坡2 
+      - 13|🇸🇬 新加坡3 
+      - 13|🇺🇸 美国 
+      - 13|🇺🇸 美国2 
+      - 13,14|美国3 
+      - 13|🇺🇸 美国4 
+      - 13|🇯🇵 日本特殊 
+      - 13|🇸🇬 狮城特殊 
+      - 13|🇰🇷 韩国特殊 
+      - 14|香港3 
+      - 14|香港4 
+      - 14|香港5 
+      - 14|香港6 
+      - 14|香港7 
+      - 14|台湾3 
+      - 14|日本3 
+      - 14|日本4 
+      - 14|日本5 
+      - 14|新加坡 
+      - 14|新加坡3 
+      - 14|美国 
+      - 14|美国2 
+      - 14|美国4 
+      - 14|日本特殊 
+      - 14|狮城特殊 
+      - 14|韩国特殊 
+      - 15|CN_speednode_0001
+      - 15|DE_speednode_0006
+      - 15|ES_speednode_0010
+      - 15|FR_speednode_0012
+      - 16|d*********g.com_2
+      - 16|d*********g.com_3
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 北美地区 cczzuu.top
-      - 北美地区 cczzuu.top 2
-      - 北美地区 cczzuu.top 3
-      - 美国 Fastly全球Anycast节点
-      - 新加坡 Amazon数据中心
-      - 美国 CloudFlare节点
-      - 德国 黑森州法兰克福Amazon数据中心
-      - 广东省广州市 移动
-      - 美国 CloudFlare节点 2
-      - 美国 CloudFlare节点 3
-      - 南非豪登省约翰内斯堡 Cloudinnovation数据中心
-      - 美国 CloudFlare节点 4
-      - 波兰 cczzuu.top
-      - 印度 cczzuu.top
-      - 广东省广州市荔湾区 /天河区电信
-      - 美国 cczzuu.top
-      - 美国 亚特兰大
-      - 江苏省 移动
-      - 伊朗 cczzuu.top
-      - 北美地区 cczzuu.top 4
-      - 北美地区 cczzuu.top 5
-      - 印度 cczzuu.top 2
-      - 澳大利亚 cczzuu.top
-      - 俄罗斯 Rubtsovsk Branch of Altai State University
-      - 美国 Sprint网络
-      - 北美地区 cczzuu.top 6
-      - 俄罗斯 cczzuu.top
-      - 北美地区 cczzuu.top 7
-      - 广东省广州市 移动 2
-      - 拉脱维亚 cczzuu.top
-      - 美国 Fastly全球Anycast节点 2
-      - 美国 CloudFlare节点 5
-      - 英国 社会保险安全部
-      - 美国 CloudFlare节点 6
-      - 法国 巴黎Amazon数据中心
-      - 爱尔兰 都柏林Amazon数据中心
-      - 海南省 移动(全省通用)
-      - 美国 CloudFlare节点 7
-      - 北美地区 cczzuu.top 8
-      - 北美地区 cczzuu.top 9
-      - 北美地区 cczzuu.top 10
-      - 印度 cczzuu.top 3
-      - 美国 CloudFlare节点 8
-      - 北美地区 cczzuu.top 11
-      - 法国 法国计算机科学大学
-      - 美国 CloudFlare节点 9
-      - 瑞典 cczzuu.top
-      - 美国 Amazon数据中心
-      - 江苏省 移动 2
+      - 6元高速机场:https://cczzuu.top
+      - 0|--2
+      - 0|--3
+      - 0|--4
+      - 0|--7
+      - 0|--8
+      - 0|--9
+      - 0|--10
+      - 0|--11
+      - 0|--12
+      - 0|--14
+      - 0|--15
+      - 0|--16
+      - 0|--17
+      - 0|--19
+      - 0|--28
+      - 13,14|香港 
+      - 13,14|香港2 
+      - 13|🇭🇰 香港3 
+      - 13|🇭🇰 香港4 
+      - 13|🇭🇰 香港5 
+      - 13|🇭🇰 香港6 
+      - 13|🇭🇰 香港7 
+      - 13,14|香港8 
+      - 13,14|台湾 
+      - 13,14|台湾2 
+      - 13|🇹🇼 台湾3 
+      - 13,14|日本 
+      - 13,14|日本2 
+      - 13|🇯🇵 日本3 
+      - 13|🇯🇵 日本4 
+      - 13|🇯🇵 日本5 
+      - 13|🇸🇬 新加坡 
+      - 13,14|新加坡2 
+      - 13|🇸🇬 新加坡3 
+      - 13|🇺🇸 美国 
+      - 13|🇺🇸 美国2 
+      - 13,14|美国3 
+      - 13|🇺🇸 美国4 
+      - 13|🇯🇵 日本特殊 
+      - 13|🇸🇬 狮城特殊 
+      - 13|🇰🇷 韩国特殊 
+      - 14|香港3 
+      - 14|香港4 
+      - 14|香港5 
+      - 14|香港6 
+      - 14|香港7 
+      - 14|台湾3 
+      - 14|日本3 
+      - 14|日本4 
+      - 14|日本5 
+      - 14|新加坡 
+      - 14|新加坡3 
+      - 14|美国 
+      - 14|美国2 
+      - 14|美国4 
+      - 14|日本特殊 
+      - 14|狮城特殊 
+      - 14|韩国特殊 
+      - 15|CN_speednode_0001
+      - 15|DE_speednode_0006
+      - 15|ES_speednode_0010
+      - 15|FR_speednode_0012
+      - 16|d*********g.com_2
+      - 16|d*********g.com_3
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 北美地区 cczzuu.top
-      - 北美地区 cczzuu.top 2
-      - 北美地区 cczzuu.top 3
-      - 美国 Fastly全球Anycast节点
-      - 新加坡 Amazon数据中心
-      - 美国 CloudFlare节点
-      - 德国 黑森州法兰克福Amazon数据中心
-      - 广东省广州市 移动
-      - 美国 CloudFlare节点 2
-      - 美国 CloudFlare节点 3
-      - 南非豪登省约翰内斯堡 Cloudinnovation数据中心
-      - 美国 CloudFlare节点 4
-      - 波兰 cczzuu.top
-      - 印度 cczzuu.top
-      - 广东省广州市荔湾区 /天河区电信
-      - 美国 cczzuu.top
-      - 美国 亚特兰大
-      - 江苏省 移动
-      - 伊朗 cczzuu.top
-      - 北美地区 cczzuu.top 4
-      - 北美地区 cczzuu.top 5
-      - 印度 cczzuu.top 2
-      - 澳大利亚 cczzuu.top
-      - 俄罗斯 Rubtsovsk Branch of Altai State University
-      - 美国 Sprint网络
-      - 北美地区 cczzuu.top 6
-      - 俄罗斯 cczzuu.top
-      - 北美地区 cczzuu.top 7
-      - 广东省广州市 移动 2
-      - 拉脱维亚 cczzuu.top
-      - 美国 Fastly全球Anycast节点 2
-      - 美国 CloudFlare节点 5
-      - 英国 社会保险安全部
-      - 美国 CloudFlare节点 6
-      - 法国 巴黎Amazon数据中心
-      - 爱尔兰 都柏林Amazon数据中心
-      - 海南省 移动(全省通用)
-      - 美国 CloudFlare节点 7
-      - 北美地区 cczzuu.top 8
-      - 北美地区 cczzuu.top 9
-      - 北美地区 cczzuu.top 10
-      - 印度 cczzuu.top 3
-      - 美国 CloudFlare节点 8
-      - 北美地区 cczzuu.top 11
-      - 法国 法国计算机科学大学
-      - 美国 CloudFlare节点 9
-      - 瑞典 cczzuu.top
-      - 美国 Amazon数据中心
-      - 江苏省 移动 2
+      - 6元高速机场:https://cczzuu.top
+      - 0|--2
+      - 0|--3
+      - 0|--4
+      - 0|--7
+      - 0|--8
+      - 0|--9
+      - 0|--10
+      - 0|--11
+      - 0|--12
+      - 0|--14
+      - 0|--15
+      - 0|--16
+      - 0|--17
+      - 0|--19
+      - 0|--28
+      - 13,14|香港 
+      - 13,14|香港2 
+      - 13|🇭🇰 香港3 
+      - 13|🇭🇰 香港4 
+      - 13|🇭🇰 香港5 
+      - 13|🇭🇰 香港6 
+      - 13|🇭🇰 香港7 
+      - 13,14|香港8 
+      - 13,14|台湾 
+      - 13,14|台湾2 
+      - 13|🇹🇼 台湾3 
+      - 13,14|日本 
+      - 13,14|日本2 
+      - 13|🇯🇵 日本3 
+      - 13|🇯🇵 日本4 
+      - 13|🇯🇵 日本5 
+      - 13|🇸🇬 新加坡 
+      - 13,14|新加坡2 
+      - 13|🇸🇬 新加坡3 
+      - 13|🇺🇸 美国 
+      - 13|🇺🇸 美国2 
+      - 13,14|美国3 
+      - 13|🇺🇸 美国4 
+      - 13|🇯🇵 日本特殊 
+      - 13|🇸🇬 狮城特殊 
+      - 13|🇰🇷 韩国特殊 
+      - 14|香港3 
+      - 14|香港4 
+      - 14|香港5 
+      - 14|香港6 
+      - 14|香港7 
+      - 14|台湾3 
+      - 14|日本3 
+      - 14|日本4 
+      - 14|日本5 
+      - 14|新加坡 
+      - 14|新加坡3 
+      - 14|美国 
+      - 14|美国2 
+      - 14|美国4 
+      - 14|日本特殊 
+      - 14|狮城特殊 
+      - 14|韩国特殊 
+      - 15|CN_speednode_0001
+      - 15|DE_speednode_0006
+      - 15|ES_speednode_0010
+      - 15|FR_speednode_0012
+      - 16|d*********g.com_2
+      - 16|d*********g.com_3
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 北美地区 cczzuu.top
-      - 北美地区 cczzuu.top 2
-      - 北美地区 cczzuu.top 3
-      - 美国 Fastly全球Anycast节点
-      - 新加坡 Amazon数据中心
-      - 美国 CloudFlare节点
-      - 德国 黑森州法兰克福Amazon数据中心
-      - 广东省广州市 移动
-      - 美国 CloudFlare节点 2
-      - 美国 CloudFlare节点 3
-      - 南非豪登省约翰内斯堡 Cloudinnovation数据中心
-      - 美国 CloudFlare节点 4
-      - 波兰 cczzuu.top
-      - 印度 cczzuu.top
-      - 广东省广州市荔湾区 /天河区电信
-      - 美国 cczzuu.top
-      - 美国 亚特兰大
-      - 江苏省 移动
-      - 伊朗 cczzuu.top
-      - 北美地区 cczzuu.top 4
-      - 北美地区 cczzuu.top 5
-      - 印度 cczzuu.top 2
-      - 澳大利亚 cczzuu.top
-      - 俄罗斯 Rubtsovsk Branch of Altai State University
-      - 美国 Sprint网络
-      - 北美地区 cczzuu.top 6
-      - 俄罗斯 cczzuu.top
-      - 北美地区 cczzuu.top 7
-      - 广东省广州市 移动 2
-      - 拉脱维亚 cczzuu.top
-      - 美国 Fastly全球Anycast节点 2
-      - 美国 CloudFlare节点 5
-      - 英国 社会保险安全部
-      - 美国 CloudFlare节点 6
-      - 法国 巴黎Amazon数据中心
-      - 爱尔兰 都柏林Amazon数据中心
-      - 海南省 移动(全省通用)
-      - 美国 CloudFlare节点 7
-      - 北美地区 cczzuu.top 8
-      - 北美地区 cczzuu.top 9
-      - 北美地区 cczzuu.top 10
-      - 印度 cczzuu.top 3
-      - 美国 CloudFlare节点 8
-      - 北美地区 cczzuu.top 11
-      - 法国 法国计算机科学大学
-      - 美国 CloudFlare节点 9
-      - 瑞典 cczzuu.top
-      - 美国 Amazon数据中心
-      - 江苏省 移动 2
+      - 6元高速机场:https://cczzuu.top
+      - 0|--2
+      - 0|--3
+      - 0|--4
+      - 0|--7
+      - 0|--8
+      - 0|--9
+      - 0|--10
+      - 0|--11
+      - 0|--12
+      - 0|--14
+      - 0|--15
+      - 0|--16
+      - 0|--17
+      - 0|--19
+      - 0|--28
+      - 13,14|香港 
+      - 13,14|香港2 
+      - 13|🇭🇰 香港3 
+      - 13|🇭🇰 香港4 
+      - 13|🇭🇰 香港5 
+      - 13|🇭🇰 香港6 
+      - 13|🇭🇰 香港7 
+      - 13,14|香港8 
+      - 13,14|台湾 
+      - 13,14|台湾2 
+      - 13|🇹🇼 台湾3 
+      - 13,14|日本 
+      - 13,14|日本2 
+      - 13|🇯🇵 日本3 
+      - 13|🇯🇵 日本4 
+      - 13|🇯🇵 日本5 
+      - 13|🇸🇬 新加坡 
+      - 13,14|新加坡2 
+      - 13|🇸🇬 新加坡3 
+      - 13|🇺🇸 美国 
+      - 13|🇺🇸 美国2 
+      - 13,14|美国3 
+      - 13|🇺🇸 美国4 
+      - 13|🇯🇵 日本特殊 
+      - 13|🇸🇬 狮城特殊 
+      - 13|🇰🇷 韩国特殊 
+      - 14|香港3 
+      - 14|香港4 
+      - 14|香港5 
+      - 14|香港6 
+      - 14|香港7 
+      - 14|台湾3 
+      - 14|日本3 
+      - 14|日本4 
+      - 14|日本5 
+      - 14|新加坡 
+      - 14|新加坡3 
+      - 14|美国 
+      - 14|美国2 
+      - 14|美国4 
+      - 14|日本特殊 
+      - 14|狮城特殊 
+      - 14|韩国特殊 
+      - 15|CN_speednode_0001
+      - 15|DE_speednode_0006
+      - 15|ES_speednode_0010
+      - 15|FR_speednode_0012
+      - 16|d*********g.com_2
+      - 16|d*********g.com_3
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 北美地区 cczzuu.top
-      - 北美地区 cczzuu.top 2
-      - 北美地区 cczzuu.top 3
-      - 美国 Fastly全球Anycast节点
-      - 新加坡 Amazon数据中心
-      - 美国 CloudFlare节点
-      - 德国 黑森州法兰克福Amazon数据中心
-      - 广东省广州市 移动
-      - 美国 CloudFlare节点 2
-      - 美国 CloudFlare节点 3
-      - 南非豪登省约翰内斯堡 Cloudinnovation数据中心
-      - 美国 CloudFlare节点 4
-      - 波兰 cczzuu.top
-      - 印度 cczzuu.top
-      - 广东省广州市荔湾区 /天河区电信
-      - 美国 cczzuu.top
-      - 美国 亚特兰大
-      - 江苏省 移动
-      - 伊朗 cczzuu.top
-      - 北美地区 cczzuu.top 4
-      - 北美地区 cczzuu.top 5
-      - 印度 cczzuu.top 2
-      - 澳大利亚 cczzuu.top
-      - 俄罗斯 Rubtsovsk Branch of Altai State University
-      - 美国 Sprint网络
-      - 北美地区 cczzuu.top 6
-      - 俄罗斯 cczzuu.top
-      - 北美地区 cczzuu.top 7
-      - 广东省广州市 移动 2
-      - 拉脱维亚 cczzuu.top
-      - 美国 Fastly全球Anycast节点 2
-      - 美国 CloudFlare节点 5
-      - 英国 社会保险安全部
-      - 美国 CloudFlare节点 6
-      - 法国 巴黎Amazon数据中心
-      - 爱尔兰 都柏林Amazon数据中心
-      - 海南省 移动(全省通用)
-      - 美国 CloudFlare节点 7
-      - 北美地区 cczzuu.top 8
-      - 北美地区 cczzuu.top 9
-      - 北美地区 cczzuu.top 10
-      - 印度 cczzuu.top 3
-      - 美国 CloudFlare节点 8
-      - 北美地区 cczzuu.top 11
-      - 法国 法国计算机科学大学
-      - 美国 CloudFlare节点 9
-      - 瑞典 cczzuu.top
-      - 美国 Amazon数据中心
-      - 江苏省 移动 2
+      - 6元高速机场:https://cczzuu.top
+      - 0|--2
+      - 0|--3
+      - 0|--4
+      - 0|--7
+      - 0|--8
+      - 0|--9
+      - 0|--10
+      - 0|--11
+      - 0|--12
+      - 0|--14
+      - 0|--15
+      - 0|--16
+      - 0|--17
+      - 0|--19
+      - 0|--28
+      - 13,14|香港 
+      - 13,14|香港2 
+      - 13|🇭🇰 香港3 
+      - 13|🇭🇰 香港4 
+      - 13|🇭🇰 香港5 
+      - 13|🇭🇰 香港6 
+      - 13|🇭🇰 香港7 
+      - 13,14|香港8 
+      - 13,14|台湾 
+      - 13,14|台湾2 
+      - 13|🇹🇼 台湾3 
+      - 13,14|日本 
+      - 13,14|日本2 
+      - 13|🇯🇵 日本3 
+      - 13|🇯🇵 日本4 
+      - 13|🇯🇵 日本5 
+      - 13|🇸🇬 新加坡 
+      - 13,14|新加坡2 
+      - 13|🇸🇬 新加坡3 
+      - 13|🇺🇸 美国 
+      - 13|🇺🇸 美国2 
+      - 13,14|美国3 
+      - 13|🇺🇸 美国4 
+      - 13|🇯🇵 日本特殊 
+      - 13|🇸🇬 狮城特殊 
+      - 13|🇰🇷 韩国特殊 
+      - 14|香港3 
+      - 14|香港4 
+      - 14|香港5 
+      - 14|香港6 
+      - 14|香港7 
+      - 14|台湾3 
+      - 14|日本3 
+      - 14|日本4 
+      - 14|日本5 
+      - 14|新加坡 
+      - 14|新加坡3 
+      - 14|美国 
+      - 14|美国2 
+      - 14|美国4 
+      - 14|日本特殊 
+      - 14|狮城特殊 
+      - 14|韩国特殊 
+      - 15|CN_speednode_0001
+      - 15|DE_speednode_0006
+      - 15|ES_speednode_0010
+      - 15|FR_speednode_0012
+      - 16|d*********g.com_2
+      - 16|d*********g.com_3
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 北美地区 cczzuu.top
-      - 北美地区 cczzuu.top 2
-      - 北美地区 cczzuu.top 3
-      - 美国 Fastly全球Anycast节点
-      - 新加坡 Amazon数据中心
-      - 美国 CloudFlare节点
-      - 德国 黑森州法兰克福Amazon数据中心
-      - 广东省广州市 移动
-      - 美国 CloudFlare节点 2
-      - 美国 CloudFlare节点 3
-      - 南非豪登省约翰内斯堡 Cloudinnovation数据中心
-      - 美国 CloudFlare节点 4
-      - 波兰 cczzuu.top
-      - 印度 cczzuu.top
-      - 广东省广州市荔湾区 /天河区电信
-      - 美国 cczzuu.top
-      - 美国 亚特兰大
-      - 江苏省 移动
-      - 伊朗 cczzuu.top
-      - 北美地区 cczzuu.top 4
-      - 北美地区 cczzuu.top 5
-      - 印度 cczzuu.top 2
-      - 澳大利亚 cczzuu.top
-      - 俄罗斯 Rubtsovsk Branch of Altai State University
-      - 美国 Sprint网络
-      - 北美地区 cczzuu.top 6
-      - 俄罗斯 cczzuu.top
-      - 北美地区 cczzuu.top 7
-      - 广东省广州市 移动 2
-      - 拉脱维亚 cczzuu.top
-      - 美国 Fastly全球Anycast节点 2
-      - 美国 CloudFlare节点 5
-      - 英国 社会保险安全部
-      - 美国 CloudFlare节点 6
-      - 法国 巴黎Amazon数据中心
-      - 爱尔兰 都柏林Amazon数据中心
-      - 海南省 移动(全省通用)
-      - 美国 CloudFlare节点 7
-      - 北美地区 cczzuu.top 8
-      - 北美地区 cczzuu.top 9
-      - 北美地区 cczzuu.top 10
-      - 印度 cczzuu.top 3
-      - 美国 CloudFlare节点 8
-      - 北美地区 cczzuu.top 11
-      - 法国 法国计算机科学大学
-      - 美国 CloudFlare节点 9
-      - 瑞典 cczzuu.top
-      - 美国 Amazon数据中心
-      - 江苏省 移动 2
+      - 6元高速机场:https://cczzuu.top
+      - 0|--2
+      - 0|--3
+      - 0|--4
+      - 0|--7
+      - 0|--8
+      - 0|--9
+      - 0|--10
+      - 0|--11
+      - 0|--12
+      - 0|--14
+      - 0|--15
+      - 0|--16
+      - 0|--17
+      - 0|--19
+      - 0|--28
+      - 13,14|香港 
+      - 13,14|香港2 
+      - 13|🇭🇰 香港3 
+      - 13|🇭🇰 香港4 
+      - 13|🇭🇰 香港5 
+      - 13|🇭🇰 香港6 
+      - 13|🇭🇰 香港7 
+      - 13,14|香港8 
+      - 13,14|台湾 
+      - 13,14|台湾2 
+      - 13|🇹🇼 台湾3 
+      - 13,14|日本 
+      - 13,14|日本2 
+      - 13|🇯🇵 日本3 
+      - 13|🇯🇵 日本4 
+      - 13|🇯🇵 日本5 
+      - 13|🇸🇬 新加坡 
+      - 13,14|新加坡2 
+      - 13|🇸🇬 新加坡3 
+      - 13|🇺🇸 美国 
+      - 13|🇺🇸 美国2 
+      - 13,14|美国3 
+      - 13|🇺🇸 美国4 
+      - 13|🇯🇵 日本特殊 
+      - 13|🇸🇬 狮城特殊 
+      - 13|🇰🇷 韩国特殊 
+      - 14|香港3 
+      - 14|香港4 
+      - 14|香港5 
+      - 14|香港6 
+      - 14|香港7 
+      - 14|台湾3 
+      - 14|日本3 
+      - 14|日本4 
+      - 14|日本5 
+      - 14|新加坡 
+      - 14|新加坡3 
+      - 14|美国 
+      - 14|美国2 
+      - 14|美国4 
+      - 14|日本特殊 
+      - 14|狮城特殊 
+      - 14|韩国特殊 
+      - 15|CN_speednode_0001
+      - 15|DE_speednode_0006
+      - 15|ES_speednode_0010
+      - 15|FR_speednode_0012
+      - 16|d*********g.com_2
+      - 16|d*********g.com_3
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 北美地区 cczzuu.top
-      - 北美地区 cczzuu.top 2
-      - 北美地区 cczzuu.top 3
-      - 美国 Fastly全球Anycast节点
-      - 新加坡 Amazon数据中心
-      - 美国 CloudFlare节点
-      - 德国 黑森州法兰克福Amazon数据中心
-      - 广东省广州市 移动
-      - 美国 CloudFlare节点 2
-      - 美国 CloudFlare节点 3
-      - 南非豪登省约翰内斯堡 Cloudinnovation数据中心
-      - 美国 CloudFlare节点 4
-      - 波兰 cczzuu.top
-      - 印度 cczzuu.top
-      - 广东省广州市荔湾区 /天河区电信
-      - 美国 cczzuu.top
-      - 美国 亚特兰大
-      - 江苏省 移动
-      - 伊朗 cczzuu.top
-      - 北美地区 cczzuu.top 4
-      - 北美地区 cczzuu.top 5
-      - 印度 cczzuu.top 2
-      - 澳大利亚 cczzuu.top
-      - 俄罗斯 Rubtsovsk Branch of Altai State University
-      - 美国 Sprint网络
-      - 北美地区 cczzuu.top 6
-      - 俄罗斯 cczzuu.top
-      - 北美地区 cczzuu.top 7
-      - 广东省广州市 移动 2
-      - 拉脱维亚 cczzuu.top
-      - 美国 Fastly全球Anycast节点 2
-      - 美国 CloudFlare节点 5
-      - 英国 社会保险安全部
-      - 美国 CloudFlare节点 6
-      - 法国 巴黎Amazon数据中心
-      - 爱尔兰 都柏林Amazon数据中心
-      - 海南省 移动(全省通用)
-      - 美国 CloudFlare节点 7
-      - 北美地区 cczzuu.top 8
-      - 北美地区 cczzuu.top 9
-      - 北美地区 cczzuu.top 10
-      - 印度 cczzuu.top 3
-      - 美国 CloudFlare节点 8
-      - 北美地区 cczzuu.top 11
-      - 法国 法国计算机科学大学
-      - 美国 CloudFlare节点 9
-      - 瑞典 cczzuu.top
-      - 美国 Amazon数据中心
-      - 江苏省 移动 2
+      - 6元高速机场:https://cczzuu.top
+      - 0|--2
+      - 0|--3
+      - 0|--4
+      - 0|--7
+      - 0|--8
+      - 0|--9
+      - 0|--10
+      - 0|--11
+      - 0|--12
+      - 0|--14
+      - 0|--15
+      - 0|--16
+      - 0|--17
+      - 0|--19
+      - 0|--28
+      - 13,14|香港 
+      - 13,14|香港2 
+      - 13|🇭🇰 香港3 
+      - 13|🇭🇰 香港4 
+      - 13|🇭🇰 香港5 
+      - 13|🇭🇰 香港6 
+      - 13|🇭🇰 香港7 
+      - 13,14|香港8 
+      - 13,14|台湾 
+      - 13,14|台湾2 
+      - 13|🇹🇼 台湾3 
+      - 13,14|日本 
+      - 13,14|日本2 
+      - 13|🇯🇵 日本3 
+      - 13|🇯🇵 日本4 
+      - 13|🇯🇵 日本5 
+      - 13|🇸🇬 新加坡 
+      - 13,14|新加坡2 
+      - 13|🇸🇬 新加坡3 
+      - 13|🇺🇸 美国 
+      - 13|🇺🇸 美国2 
+      - 13,14|美国3 
+      - 13|🇺🇸 美国4 
+      - 13|🇯🇵 日本特殊 
+      - 13|🇸🇬 狮城特殊 
+      - 13|🇰🇷 韩国特殊 
+      - 14|香港3 
+      - 14|香港4 
+      - 14|香港5 
+      - 14|香港6 
+      - 14|香港7 
+      - 14|台湾3 
+      - 14|日本3 
+      - 14|日本4 
+      - 14|日本5 
+      - 14|新加坡 
+      - 14|新加坡3 
+      - 14|美国 
+      - 14|美国2 
+      - 14|美国4 
+      - 14|日本特殊 
+      - 14|狮城特殊 
+      - 14|韩国特殊 
+      - 15|CN_speednode_0001
+      - 15|DE_speednode_0006
+      - 15|ES_speednode_0010
+      - 15|FR_speednode_0012
+      - 16|d*********g.com_2
+      - 16|d*********g.com_3
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -458,55 +586,71 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 北美地区 cczzuu.top
-      - 北美地区 cczzuu.top 2
-      - 北美地区 cczzuu.top 3
-      - 美国 Fastly全球Anycast节点
-      - 新加坡 Amazon数据中心
-      - 美国 CloudFlare节点
-      - 德国 黑森州法兰克福Amazon数据中心
-      - 广东省广州市 移动
-      - 美国 CloudFlare节点 2
-      - 美国 CloudFlare节点 3
-      - 南非豪登省约翰内斯堡 Cloudinnovation数据中心
-      - 美国 CloudFlare节点 4
-      - 波兰 cczzuu.top
-      - 印度 cczzuu.top
-      - 广东省广州市荔湾区 /天河区电信
-      - 美国 cczzuu.top
-      - 美国 亚特兰大
-      - 江苏省 移动
-      - 伊朗 cczzuu.top
-      - 北美地区 cczzuu.top 4
-      - 北美地区 cczzuu.top 5
-      - 印度 cczzuu.top 2
-      - 澳大利亚 cczzuu.top
-      - 俄罗斯 Rubtsovsk Branch of Altai State University
-      - 美国 Sprint网络
-      - 北美地区 cczzuu.top 6
-      - 俄罗斯 cczzuu.top
-      - 北美地区 cczzuu.top 7
-      - 广东省广州市 移动 2
-      - 拉脱维亚 cczzuu.top
-      - 美国 Fastly全球Anycast节点 2
-      - 美国 CloudFlare节点 5
-      - 英国 社会保险安全部
-      - 美国 CloudFlare节点 6
-      - 法国 巴黎Amazon数据中心
-      - 爱尔兰 都柏林Amazon数据中心
-      - 海南省 移动(全省通用)
-      - 美国 CloudFlare节点 7
-      - 北美地区 cczzuu.top 8
-      - 北美地区 cczzuu.top 9
-      - 北美地区 cczzuu.top 10
-      - 印度 cczzuu.top 3
-      - 美国 CloudFlare节点 8
-      - 北美地区 cczzuu.top 11
-      - 法国 法国计算机科学大学
-      - 美国 CloudFlare节点 9
-      - 瑞典 cczzuu.top
-      - 美国 Amazon数据中心
-      - 江苏省 移动 2
+      - 6元高速机场:https://cczzuu.top
+      - 0|--2
+      - 0|--3
+      - 0|--4
+      - 0|--7
+      - 0|--8
+      - 0|--9
+      - 0|--10
+      - 0|--11
+      - 0|--12
+      - 0|--14
+      - 0|--15
+      - 0|--16
+      - 0|--17
+      - 0|--19
+      - 0|--28
+      - 13,14|香港 
+      - 13,14|香港2 
+      - 13|🇭🇰 香港3 
+      - 13|🇭🇰 香港4 
+      - 13|🇭🇰 香港5 
+      - 13|🇭🇰 香港6 
+      - 13|🇭🇰 香港7 
+      - 13,14|香港8 
+      - 13,14|台湾 
+      - 13,14|台湾2 
+      - 13|🇹🇼 台湾3 
+      - 13,14|日本 
+      - 13,14|日本2 
+      - 13|🇯🇵 日本3 
+      - 13|🇯🇵 日本4 
+      - 13|🇯🇵 日本5 
+      - 13|🇸🇬 新加坡 
+      - 13,14|新加坡2 
+      - 13|🇸🇬 新加坡3 
+      - 13|🇺🇸 美国 
+      - 13|🇺🇸 美国2 
+      - 13,14|美国3 
+      - 13|🇺🇸 美国4 
+      - 13|🇯🇵 日本特殊 
+      - 13|🇸🇬 狮城特殊 
+      - 13|🇰🇷 韩国特殊 
+      - 14|香港3 
+      - 14|香港4 
+      - 14|香港5 
+      - 14|香港6 
+      - 14|香港7 
+      - 14|台湾3 
+      - 14|日本3 
+      - 14|日本4 
+      - 14|日本5 
+      - 14|新加坡 
+      - 14|新加坡3 
+      - 14|美国 
+      - 14|美国2 
+      - 14|美国4 
+      - 14|日本特殊 
+      - 14|狮城特殊 
+      - 14|韩国特殊 
+      - 15|CN_speednode_0001
+      - 15|DE_speednode_0006
+      - 15|ES_speednode_0010
+      - 15|FR_speednode_0012
+      - 16|d*********g.com_2
+      - 16|d*********g.com_3
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
