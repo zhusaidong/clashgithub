@@ -22,15 +22,15 @@ jobs:
       run: |
         echo "current time=$(date +'%Y%m%d %H:%M:%S')"
         
-        wget --tries=2 --wait=10 --timeout=15 "https://clashnode.github.io/uploads/$(date +'%Y')/$(date +'%m')/1-$(date -d "yesterday" +'%Y%m%d').yaml" -O clash-clashnode.github.io-1.yml || true
-        wget --tries=2 --wait=10 --timeout=15 "https://clashnode.github.io/uploads/$(date +'%Y')/$(date +'%m')/2-$(date -d "yesterday" +'%Y%m%d').yaml" -O clash-clashnode.github.io-2.yml || true
+        wget --tries=2 --wait=10 --timeout=15 "https://node.freeclashnode.com/uploads/$(date +'%Y')/$(date +'%m')/1-$(date -d "yesterday" +'%Y%m%d').yaml" -O clash-clashnode.github.io-1.yml || true
+        wget --tries=2 --wait=10 --timeout=15 "https://node.freeclashnode.com/uploads/$(date +'%Y')/$(date +'%m')/2-$(date -d "yesterday" +'%Y%m%d').yaml" -O clash-clashnode.github.io-2.yml || true
         sed -i 's/6元高速机场:cczzuu.top/高性价比机场:https:\/\/kfyun.uk/g' clash-clashnode.github.io-2.yml
         sed -i 's/高性价比机场:cczzuu.top/高性价比机场:https:\/\/kfyun.uk/g' clash-clashnode.github.io-2.yml
         sed -i 's/<pre style="word-wrap: break-word; white-space: pre-wrap;">//g' clash-clashnode.github.io-2.yml
         sed -i 's/<\/pre>//g' clash-clashnode.github.io-2.yml
         
-        wget --tries=2 --wait=10 --timeout=15 "https://clashnode.github.io/uploads/$(date +'%Y')/$(date +'%m')/3-$(date -d "yesterday" +'%Y%m%d').yaml" -O clash-clashnode.github.io-3.yml || true
-        wget --tries=2 --wait=10 --timeout=15 "https://clashnode.github.io/uploads/$(date +'%Y')/$(date +'%m')/4-$(date -d "yesterday" +'%Y%m%d').yaml"  -O clash-clashnode.github.io-4.yml || true
+        wget --tries=2 --wait=10 --timeout=15 "https://node.freeclashnode.com/uploads/$(date +'%Y')/$(date +'%m')/3-$(date -d "yesterday" +'%Y%m%d').yaml" -O clash-clashnode.github.io-3.yml || true
+        wget --tries=2 --wait=10 --timeout=15 "https://node.freeclashnode.com/uploads/$(date +'%Y')/$(date +'%m')/4-$(date -d "yesterday" +'%Y%m%d').yaml"  -O clash-clashnode.github.io-4.yml || true
         sed -i 's/<pre style="word-wrap: break-word; white-space: pre-wrap;">//g' clash-clashnode.github.io-4.yml
         sed -i 's/<\/pre>//g' clash-clashnode.github.io-4.yml
         
