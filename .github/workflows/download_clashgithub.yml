@@ -34,7 +34,7 @@ jobs:
         sed -i 's/<pre style="word-wrap: break-word; white-space: pre-wrap;">//g' clash-clashnode.github.io-4.yml
         sed -i 's/<\/pre>//g' clash-clashnode.github.io-4.yml
         
-        wget --tries=2 --wait=10 --timeout=15 "https://raw.githubusercontent.com/aiboboxx/clashfree/main/clash.yml"  -O clash-aiboboxx.clashfree.yml || true
+        wget --tries=2 --wait=10 --timeout=15 "https://raw.githubusercontent.com/free-nodes/clashfree/refs/heads/main/clash$(date -d "yesterday" +'%Y%m%d').yml"  -O clash-aiboboxx.clashfree.yml || true
         sed -i 's/<pre style="word-wrap: break-word; white-space: pre-wrap;">//g' clash-aiboboxx.clashfree.yml
         sed -i 's/<\/pre>//g' clash-aiboboxx.clashfree.yml
 
