@@ -38,7 +38,7 @@ jobs:
         sed -i 's/<pre style="word-wrap: break-word; white-space: pre-wrap;">//g' clash-aiboboxx.clashfree.yml
         sed -i 's/<\/pre>//g' clash-aiboboxx.clashfree.yml
 
-        wget --tries=2 --wait=10 --timeout=15 "https://www.stairnode.com/node/$(date -d "yesterday" +'%Y%m%d')-clash.yaml" -O clash-www.stairnode.com.yml || true
+        wget --tries=2 --wait=10 --timeout=15 "https://stairnode.cczzuu.top/node/$(date -d "yesterday" +'%Y%m%d')-clash.yaml" -O clash-www.stairnode.com.yml || true
         sed -i 's/6元高速机场:cczzuu.top/高性价比机场:https:\/\/kfyun.uk/g' clash-www.stairnode.com.yml
         sed -i 's/<pre style="word-wrap: break-word; white-space: pre-wrap;">//g' clash-www.stairnode.com.yml
         sed -i 's/<\/pre>//g' clash-www.stairnode.com.yml
